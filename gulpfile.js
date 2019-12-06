@@ -191,12 +191,13 @@ gulp.task('watch',
           'styles',
           'images',
           'fonts',
+          'sprites',
           'main-libs'
         ],
         gulp.parallel('watchCode', 'server'))
 );
 
 gulp.task('build',
-    gulp.series(['styles', 'images', 'main-libs'])
+    gulp.series(['styles', 'images', 'sprites', 'main-libs'])
 );
 gulp.task('default', gulp.series('watch'));

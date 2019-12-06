@@ -1,0 +1,18 @@
+#advertising-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+  .modal-dialog.advertising-modal(role='document')
+    .modal-content
+      .modal-body
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          +sprite('icon','close-icon')
+        .get-advertising-form
+          .get-advertising-form--title Замовити рекламу на радіо:
+          form(action='#')
+            .row
+              .col-md-12.col-lg-6
+                input(type='text' placeholder='Телефон').form-control
+                input(type='email' placeholder='E-mail').form-control
+                input(type='email' placeholder="Ім'я або назва компанії").form-control
+              .col-md-12.col-lg-6
+                textarea(placeholder='Ваше замовлення' rows='5').form-control
+              .col-md-12.col-lg-6
+                button(type='submit').get-advertising-form__btn Відправити замовлення

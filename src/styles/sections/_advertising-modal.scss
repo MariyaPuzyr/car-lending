@@ -1,0 +1,55 @@
+.advertising-modal {
+  &.modal-dialog {
+    max-width: 790px;
+    .modal-content {
+      border: none;
+      border-radius: 6px;
+      box-shadow: 0 8px 10px rgba(0, 0, 0, 0.15);
+    }
+  }
+  .modal-body {
+    padding: 20px 30px 0;
+  }
+  .get-advertising-form {
+    &--title {
+      font-size: 28px;
+      line-height: 38px;
+      color: $color_txt;
+      padding-right: 25px;
+      @include adapt_to('large-phone') {
+        font-size: 24px;
+        line-height: normal;
+      }
+    }
+    .form-control {
+      background: $color_grey;
+      border-color: transparent;
+      &:focus {
+        border-color: $color_green;
+      }
+    }
+    .error {
+      border-color: $color_error;
+    }
+    &__btn {
+      background: $color_green;
+      font-family: $font_bold;
+      &:hover {
+        background: $color_btn;
+      }
+    }
+  }
+  .close {
+    opacity: 1;
+    text-shadow: none;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    .icon {
+      width: 24px;
+      height: 24px;
+      fill: #C8D0D9;
+      transition: .3s;
+    }
+  }
+}

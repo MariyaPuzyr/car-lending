@@ -1,0 +1,90 @@
+.price-table {
+  margin-top: 20px;
+  margin-bottom: 70px;
+  &--title {
+    font-size: 28px;
+    line-height: 38px;
+    font-family: $font_light;
+    margin-bottom: 25px;
+    color: $color_txt;
+  }
+  p {
+    font-size: 18px;
+    line-height: 25px;
+    color: $color_txt2;
+    margin-bottom: 15px;
+  }
+  &-item {
+    width: 100%;
+    background: $color_grey;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px 10px 10px;
+  }
+  &__logo {
+    width: 100px;
+    height: 60px;
+    flex: 0 0 auto;
+  }
+  &__frequency {
+    font-size: 24px;
+    line-height: 33px;
+    color: $color_txt;
+    font-family: $font_light;
+    width: 115px;
+  }
+  &__price {
+    font-size: 16px;
+    line-height: 22px;
+    color: $color_txt2;
+    font-family: $font_main;
+    @media (max-width: 767px) {
+      flex: 0 0 100px;
+      margin: 10px;
+    }
+    .price {
+      color: $color_txt;
+      font-size: 20px;
+      line-height: 27px;
+      span {
+        font-size: 14px;
+        line-height: 19px;
+        margin-left: 3px;
+      }
+    }
+  }
+  ul {
+    padding: 0;
+    margin: 20px 0 0;
+    li {
+      font-size: 16px;
+      line-height: 30px;
+      font-family: $font_main;
+      color: $color_txt;
+    }
+  }
+}
+
+@include adapt_to('desktop') {
+  .price-table {
+    &--title {
+      font-size: 24px;
+      line-height: normal;
+    }
+    &-item {
+      flex-flow: row wrap;
+      justify-content: flex-start;
+    }
+    &__frequency {
+      width: calc(100% - 100px);
+      padding-left: 30px;
+    }
+    &__price {
+      flex: 1 0 auto;
+      margin: 10px 0;
+    }
+  }
+}

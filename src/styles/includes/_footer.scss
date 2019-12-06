@@ -1,0 +1,138 @@
+.footer {
+  background: $color_txt;
+  color: $color_white;
+  padding-top: 45px;
+  &-logo {
+    .icon {
+      fill: $color_green;
+      max-width: 292px;
+      height: 64px;
+      width: 100%;
+    }
+  }
+  &-info {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    img {
+      border-radius: 50%;
+      width: 65px;
+      height: 65px;
+      margin-right: 15px;
+    }
+    &__head-info {
+      display: flex;
+      flex-direction: column;
+      font-family: $font_light;
+      font-size: 24px;
+      line-height: 36px;
+      span {
+        font-family: $font_main;
+        font-size: 18px;
+        color: $color_txt2;
+      }
+    }
+    &__phone {
+      font-family: $font_light;
+      font-size: 30px;
+      line-height: 40px;
+    }
+    &__email {
+      font-family: $font_light;
+      font-size: 20px;
+      line-height: 36px;
+      margin-bottom: 40px;
+    }
+  }
+  &-copy-info {
+    background: $color_footer;
+    padding: 20px 0;
+    font-family: $font_main;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color_txt2;
+    @media (max-width: 575px) {
+      text-align: center;
+    }
+    p {
+      margin: 0;
+      @include adapt_to('large-phone') {
+        margin-bottom: 10px;
+      }
+    }
+    .website-development img {
+      margin-left: 10px;
+      width: 159px;
+      height: 30px;
+    }
+  }
+}
+
+.get-advertising-form {
+  margin-bottom: 40px;
+  &--title {
+    font-family: $font_light;
+    font-size: 40px;
+    line-height: 54px;
+    color: $color_txt2;
+    margin-bottom: 20px;
+    @include adapt_to('large-phone') {
+      font-size: 30px;
+      line-height: normal;
+    }
+  }
+  .form-control {
+    font-size: 16px;
+    line-height: 22px;
+    color: $color_txt2;
+    font-family: $font_main;
+    padding: 12px 30px;
+    height: auto;
+    border: 2px solid $color_bord;
+    border-radius: 25px;
+    background: $color_txt;
+    margin-bottom: 20px;
+    transition: .3s;
+    resize: none;
+    &:focus {
+      background: $color_white;
+      border-color: $color_green;
+      color: $color_txt;
+      box-shadow: none;
+      &::placeholder {
+        color: $color_txt;
+      }
+    }
+  }
+  textarea.form-control {
+    height: 190px;
+  }
+  .error {
+    border-color: $color_error;
+    color: $color_error;
+    &::placeholder {
+      color: $color_error;
+    }
+  }
+  &__btn {
+    width: 100%;
+    border: none;
+    text-align: center;
+    background: $color_bord;
+    border-radius: 25px;
+    color: $color_white;
+    padding: 12px 30px;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: $font_main;
+    transition: .3s;
+    &:hover {
+      outline: none;
+      background: $color_green;
+    }
+    @include adapt_to('large-phone') {
+      font-size: 14px;
+    }
+  }
+}

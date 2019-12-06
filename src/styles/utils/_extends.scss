@@ -1,0 +1,28 @@
+.get-advertising {
+  width: 100%;
+  max-width: 350px;
+  background: $color_btn;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 25px;
+  color: $color_white;
+  font-family: $font_bold;
+  padding: 12px 10px;
+  transition: .3s;
+  margin-bottom: 35px;
+  text-align: center;
+  z-index: 3;
+  position: relative;
+  &:hover {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+    background: $color_white;
+    color: $color_btn;
+    text-decoration: none;
+  }
+  @media (max-width: 575px) {
+    font-size: 15px;
+  }
+}

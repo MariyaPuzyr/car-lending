@@ -1,0 +1,13 @@
+.advertising-radio {
+  background: $color_green;
+  color: $color_white;
+  &-item {
+    align-items: center;
+    padding: 25px 0;
+  }
+  &--title {
+    font-size: 28px;
+    line-height: 38px;
+    font-family: $font_light;
+  }
+}

@@ -1,0 +1,35 @@
+footer.footer
+  .container
+    .row
+      .col-md-6.col-lg-4
+        a.footer-logo(href='#')
+          +sprite('icon', 'sms-logo')
+        .footer-info
+          img(src='./img/img-manager.jpg')
+          .footer-info__head-info Владимир Бойко
+            span Керівник рекламної служби
+        .footer-info__phone тел.: 0542 655 345
+        .footer-info__phone моб.: 050 307 1271
+        .footer-info__email e-mail: fmvsumah@gmail.com
+      .col-md-6.col-lg-8
+        .get-advertising-form
+          .get-advertising-form--title Замовити рекламу на радіо:
+          form(action='#')
+            .row
+              .col-md-12.col-lg-6
+                input(type='text' placeholder='Телефон').form-control
+                input(type='email' placeholder='E-mail').form-control
+                input(type='email' placeholder="Ім'я або назва компанії").form-control
+              .col-md-12.col-lg-6
+                textarea(placeholder='Ваше замовлення' rows='5').form-control
+              .col-md-12.col-lg-6
+                button(type='submit').get-advertising-form__btn Відправити замовлення
+  .footer-copy-info
+    .container
+      .row.align-items-center
+        .col-md-8
+          p Copyright  &copy; 2019 ТОВ  “Суми медіа сервіс”. All Rights Reserved.
+        .col-md-4.d-flex.justify-content-end
+          .website-development Разробка сайта –
+            a(href='http://beatom.net/' target='_tblank')
+              img(src='./img/beatom-logo.png')

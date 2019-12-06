@@ -1,0 +1,23 @@
+extends ./extends/layout
+block variables
+  - var title = "Radio"
+
+block content
+  main
+    .top-item
+      include ./includes/header
+      include ./sections/banner
+      .waveWrapper.waveAnimation
+        .waveWrapperInner.bgTop
+          .wave.waveTop(style="background-image: url('./img/wave-top.png')")
+        .waveWrapperInner.bgMiddle
+          .wave.waveMiddle(style="background-image: url('./img/wave-mid.png')")
+        .waveWrapperInner.bgBottom
+          .wave.waveBottom(style="background-image: url('./img/wave-bot.png')")
+
+    include ./sections/price-table
+    include ./sections/price-info
+    include ./sections/advertising-radio
+    include ./sections/our-works
+  include ./includes/footer
+  include ./components/advertising-modal

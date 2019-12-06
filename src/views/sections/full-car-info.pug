@@ -1,0 +1,17 @@
+section.full-car-info
+  .container
+    h5 Большие машинки на радио управлении.
+      br
+      | Ездят в любом направлении по самым сложным трассам.
+    .full-car-info__price
+      .old-price 1799 грн
+      .new-price 1133 грн
+      .discount скидка 37%
+    ul#myTab.nav.nav-tabs(role='tablist')
+      li.nav-item
+        a#racing-tab.nav-link.active(data-toggle='tab', href='#racing', role='tab', aria-controls='racing', aria-selected='true') Racing Car
+      li.nav-item
+        a#climbing-tab.nav-link(data-toggle='tab', href='#climbing', role='tab', aria-controls='climbing', aria-selected='false') Climbing King
+    .tab-content
+      #racing.tab-pane.active(role='tabpanel', aria-labelledby='racing-tab') ...
+      #climbing.tab-pane(role='tabpanel', aria-labelledby='climbing-tab') ...

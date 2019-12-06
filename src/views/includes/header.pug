@@ -1,18 +1,22 @@
-nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark
+nav.navbar.navbar-expand-md.fixed-top
   a.navbar-brand(href='#')
-    +sprite('logo', 'logo')
+    img(src='/img/logo.png')
   button.navbar-toggler.collapsed(type='button', data-toggle='collapse', data-target='#navbarCollapse', aria-controls='navbarCollapse', aria-expanded='false', aria-label='Toggle navigation')
     span.navbar-toggler-icon
   #navbarCollapse.navbar-collapse.collapse(style='')
+    ul.header-info
+      li
+        a(href='#') тел.: +380 0542 655 345
+      li
+        a(href='#') e-mail: monstercar@gmail.com
     ul.navbar-nav.mr-auto
-      li.nav-item.active
-        a.nav-link(href='#')
-          | Home
-          span.sr-only (current)
       li.nav-item
-        a.nav-link(href='#') Link
+        a.nav-link(href='#') Описание
       li.nav-item
-        a.nav-link.disabled(href='#') Disabled
-    form.form-inline.mt-2.mt-md-0
-      input.form-control.mr-sm-2(type='text', placeholder='Search', aria-label='Search')
-      button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
+        a.nav-link(href='#') Преимущества
+      li.nav-item
+        a.nav-link(href='#') Фото/видео
+      li.nav-item
+        a.nav-link(href='#') Отзывы
+      li.nav-item
+        a.nav-link.btn-buy(href='#') Купить

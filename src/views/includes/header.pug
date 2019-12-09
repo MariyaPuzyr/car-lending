@@ -1,22 +1,24 @@
 nav.navbar.navbar-expand-md.fixed-top
-  a.navbar-brand(href='#')
-    img(src='/img/logo.png')
-  button.navbar-toggler.collapsed(type='button', data-toggle='collapse', data-target='#navbarCollapse', aria-controls='navbarCollapse', aria-expanded='false', aria-label='Toggle navigation')
-    span.navbar-toggler-icon
-  #navbarCollapse.navbar-collapse.collapse(style='')
-    ul.header-info
-      li
-        a(href='#') тел.: +380 0542 655 345
-      li
-        a(href='#') e-mail: monstercar@gmail.com
-    ul.navbar-nav.mr-auto
-      li.nav-item
-        a.nav-link(href='#') Описание
-      li.nav-item
-        a.nav-link(href='#') Преимущества
-      li.nav-item
-        a.nav-link(href='#') Фото/видео
-      li.nav-item
-        a.nav-link(href='#') Отзывы
-      li.nav-item
-        a.nav-link.btn-buy(href='#') Купить
+  .container
+    a.navbar-brand(href='#')
+      img(src='/img/logo.png').img-fluid
+    button.navbar-toggler.collapsed(type='button', data-toggle='collapse', data-target='#navbarCollapse', aria-controls='navbarCollapse', aria-expanded='false', aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarCollapse.navbar-collapse.collapse(style='')
+      .navigation-list
+        ul.header-info
+          li
+            a(href='#') тел.: +380 0542 655 345
+          li
+            a(href='#') e-mail: monstercar@gmail.com
+        ul.navbar-nav
+          li.nav-item
+            a.nav-link(href='#') Описание
+          li.nav-item
+            a.nav-link(href='#') Преимущества
+          li.nav-item
+            a.nav-link(href='#') Фото/видео
+          li.nav-item
+            a.nav-link(href='#') Отзывы
+          li.nav-item
+            a.nav-link.btn-buy(href='#') Купить

@@ -1,0 +1,61 @@
+.navbar {
+  padding: 0;
+  margin-top: 15px;
+  .navigation-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+  }
+  &-brand {
+    padding: 0;
+    width: 224px;
+    height: 83px;
+  }
+  &.navbar-expand-md {
+    .navbar-nav {
+      margin: 15px 0 0;
+      align-items: center;
+      .nav-link {
+        font-size: 20px;
+        line-height: 26px;
+        color: $color_txt;
+        font-family: $font_bold;
+        transition: .3s;
+        margin-left: 10px;
+        margin-right: 30px;
+        padding: 0;
+        &:hover {
+          color: $color_green;
+          text-decoration: none;
+        }
+        &.btn-buy {
+          text-transform: uppercase;
+          color: $color_white;
+          background: $color_green;
+          border: 1px solid $color_green;
+          padding: 6px 30px;
+          margin: 0;
+          &:hover {
+            color: $color_green;
+            background: $color_white;
+          }
+        }
+      }
+    }
+  }
+  .header-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    a {
+      font-size: 18px;
+      line-height: 24px;
+      color: $color_txt2;
+      font-family: $font_main;
+      margin-left: 10px;
+    }
+  }
+}

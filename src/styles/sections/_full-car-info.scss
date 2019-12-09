@@ -1,0 +1,33 @@
+.full-car-info {
+  background: $color_white;
+  font-family: $font_main;
+  h5 {
+    font-size: 24px;
+    line-height: 32px;
+    color: $color_bord;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  &__price {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    .old-price {
+      font-size: 32px;
+      line-height: 42px;
+      color: $color_txt2;
+      position: relative;
+      display: flex;
+      align-items: center;
+      &::after {
+        content: '';
+        width: 132px;
+        height: 2px;
+        background: $color_red;
+        transform: rotate(-15deg);
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+}

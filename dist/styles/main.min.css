@@ -7350,8 +7350,11 @@ a.text-dark:focus {
 }
 
 .navbar {
-  padding: 0;
-  margin-top: 15px;
+  padding: 15px 0;
+}
+
+.navbar.fixed-menu {
+  background: rgba(255, 255, 255, 0.8);
 }
 
 .navbar .navigation-list {
@@ -7437,6 +7440,80 @@ a.text-dark:focus {
   color: #8A8F92;
   font-family: "RobotoSlab-Regular";
   margin-left: 10px;
+}
+
+.banner {
+  min-height: 600px;
+  background: url("../img/lolo_car_landing_head5.jpg") no-repeat bottom;
+  position: relative;
+  padding-top: 150px;
+}
+
+.banner::after {
+  content: '';
+  width: 100%;
+  height: 98px;
+  position: absolute;
+  bottom: 0;
+  background: url("../img/svg/top-bg.svg") no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.full-car-info {
+  background: #fff;
+  font-family: "RobotoSlab-Regular";
+}
+
+.full-car-info h5 {
+  font-size: 24px;
+  line-height: 32px;
+  color: #4D5559;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.full-car-info__price {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.full-car-info__price .old-price {
+  font-size: 32px;
+  line-height: 42px;
+  color: #8A8F92;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.full-car-info__price .old-price::after {
+  content: '';
+  width: 132px;
+  height: 2px;
+  background: #EE0707;
+  -webkit-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+  position: absolute;
+  left: 0;
 }
 
 @media (min-width: 576px) {

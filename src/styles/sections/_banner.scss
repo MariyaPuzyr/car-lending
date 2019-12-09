@@ -3,6 +3,8 @@
   background: url('../img/lolo_car_landing_head5.jpg') no-repeat bottom;
   position: relative;
   padding-top: 150px;
+  font-family: $font_bold;
+  color: $color_txt;
   &::after {
     content: '';
     width: 100%;
@@ -11,5 +13,14 @@
     bottom: 0;
     background: url('../img/svg/top-bg.svg') no-repeat;
     background-size: cover;
+  }
+  h1 {
+    margin: 0;
+    font-size: 46px;
+    line-height: normal;
+  }
+  h4 {
+    font-size: 24px;
+    line-height: normal;
   }
 }

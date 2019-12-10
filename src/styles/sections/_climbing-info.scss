@@ -8,6 +8,9 @@
     font-family: $font_bold;
     color: $color_txt;
     margin: 0;
+    @include adapt_to('large-phone') {
+      font-size: 28px;
+    }
   }
   p {
     font-size: 24px;
@@ -46,6 +49,24 @@
       align-items: center;
       text-align: center;
       margin-bottom: 30px;
+      @include adapt_to('phone') {
+        max-width: 100%;
+        border-right: none;
+        border-bottom: 2px solid rgba(#77A4C5, .2);
+        flex: 0 0 100%;
+        padding-bottom: 30px;
+        &:last-child {
+          border-right: none;
+          border-bottom: 2px solid rgba(#77A4C5, .2);
+        }
+      }
+      @include adapt_to('desktop') {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+        &:last-child {
+          border-right: 2px solid rgba(#77A4C5, .2);
+        }
+      }
       &:last-child {
         border-right: none;
       }

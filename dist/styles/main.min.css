@@ -12289,6 +12289,20 @@ a.text-dark:focus {
   }
 }
 
+@media (max-width: 991px) {
+  .climbing-info .characteristics-item {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 33.33333%;
+    -ms-flex: 0 0 33.33333%;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+
+  .climbing-info .characteristics-item:last-child {
+    border-right: 2px solid rgba(119, 164, 197, 0.2);
+  }
+}
+
 @media (max-width: 768px) {
   .banner {
     min-height: 500px;
@@ -12303,6 +12317,10 @@ a.text-dark:focus {
   .banner .container::before {
     max-width: 320px;
     right: 30px;
+  }
+
+  .climbing-info h3 {
+    font-size: 28px;
   }
 }
 
@@ -12341,6 +12359,24 @@ a.text-dark:focus {
   .navbar-expand-sm > .container-fluid {
     padding-right: 0;
     padding-left: 0;
+  }
+}
+
+@media (max-width: 568px) {
+  .climbing-info .characteristics-item {
+    max-width: 100%;
+    border-right: none;
+    border-bottom: 2px solid rgba(119, 164, 197, 0.2);
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    padding-bottom: 30px;
+  }
+
+  .climbing-info .characteristics-item:last-child {
+    border-right: none;
+    border-bottom: 2px solid rgba(119, 164, 197, 0.2);
   }
 }
 

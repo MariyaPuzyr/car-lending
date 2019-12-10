@@ -7480,6 +7480,8 @@ a.text-dark:focus {
 .banner .container::before {
   content: '';
   background: url("../img/car_head_c.png") no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
   position: absolute;
   width: 100%;
   max-width: 825px;
@@ -12175,6 +12177,23 @@ a.text-dark:focus {
   .navbar-expand-lg > .container-fluid {
     padding-right: 0;
     padding-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    min-height: 500px;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+
+  .banner h1 {
+    font-size: 38px;
+  }
+
+  .banner .container::before {
+    max-width: 320px;
+    right: 30px;
   }
 }
 

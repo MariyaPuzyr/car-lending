@@ -7473,6 +7473,21 @@ a.text-dark:focus {
   line-height: normal;
 }
 
+.banner .container {
+  position: relative;
+}
+
+.banner .container::before {
+  content: '';
+  background: url("../img/car_head_c.png") no-repeat center;
+  position: absolute;
+  width: 100%;
+  max-width: 825px;
+  height: 374px;
+  top: 40px;
+  right: 60px;
+}
+
 .full-car-info {
   background: #fff;
   font-family: "RobotoSlab-Regular";

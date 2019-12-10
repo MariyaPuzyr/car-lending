@@ -7580,13 +7580,79 @@ a.text-dark:focus {
   -ms-flex-direction: column;
   flex-direction: column;
   text-align: center;
+  margin-bottom: 35px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .climbing-info--description {
   font-size: 18px;
   line-height: 24px;
   color: #4D5559;
-  padding: 0 20px;
+  padding: 10px 20px 0;
+}
+
+.climbing-info__characteristics {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.climbing-info .characteristics-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 0 25px;
+  border-right: 2px solid rgba(119, 164, 197, 0.2);
+  font-size: 18px;
+  line-height: 24px;
+  color: #4D5559;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 16.66667%;
+  -ms-flex: 0 0 16.66667%;
+  flex: 0 0 16.66667%;
+  max-width: 16.66667%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.climbing-info .characteristics-item:last-child {
+  border-right: none;
+}
+
+.climbing-info .characteristics-item .icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 5px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.climbing-info .characteristics-notes p {
+  font-size: 16px;
+  line-height: 21px;
+  color: #77A4C5;
+  margin-bottom: 0;
 }
 
 @media (min-width: 576px) {

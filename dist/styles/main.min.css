@@ -7655,6 +7655,61 @@ a.text-dark:focus {
   margin-bottom: 0;
 }
 
+.advantages-equipment {
+  position: relative;
+  padding-top: 40px;
+}
+
+.advantages-equipment::before {
+  content: '';
+  width: 100%;
+  height: 65px;
+  background: url("../img/grey_bg_top3_c.png") no-repeat top right;
+  position: absolute;
+  top: -65px;
+  -webkit-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+.advantages-equipment__title {
+  font-size: 24px;
+  line-height: 32px;
+  color: #34383A;
+  font-family: "RobotoSlab-Bold";
+  margin-bottom: 20px;
+}
+
+.advantages-equipment__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.advantages-equipment__list li {
+  font-size: 18px;
+  line-height: 24px;
+  color: #4D5559;
+  font-family: "RobotoSlab-Regular";
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.advantages-equipment__list li::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background: url("../img/svg/icon-bullet.svg") no-repeat center;
+  margin-right: 10px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;

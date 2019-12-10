@@ -1,0 +1,41 @@
+.advantages-equipment {
+  position: relative;
+  padding-top: 40px;
+  &::before {
+    content: '';
+    width: 100%;
+    height: 65px;
+    background: url('../img/grey_bg_top3_c.png') no-repeat top right;
+    position: absolute;
+    top: -65px;
+    transform: rotate(-180deg);
+  }
+  &__title {
+    font-size: 24px;
+    line-height: 32px;
+    color: $color_txt;
+    font-family: $font_bold;
+    margin-bottom: 20px;
+  }
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li {
+      font-size: 18px;
+      line-height: 24px;
+      color: $color_bord;
+      font-family: $font_main;
+      display: flex;
+      margin-bottom: 20px;
+      &::before {
+        content: '';
+        width: 24px;
+        height: 24px;
+        background: url('../img/svg/icon-bullet.svg') no-repeat center;
+        margin-right: 10px;
+        flex: 0 0 auto;
+      }
+    }
+  }
+}

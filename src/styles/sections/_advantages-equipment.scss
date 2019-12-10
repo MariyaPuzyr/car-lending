@@ -1,6 +1,7 @@
 .advantages-equipment {
   position: relative;
   padding-top: 40px;
+  padding-bottom: 30px;
   &::before {
     content: '';
     width: 100%;
@@ -37,5 +38,29 @@
         flex: 0 0 auto;
       }
     }
+  }
+  img {
+    width: 160px;
+    height: 125px;
+    flex: 0 0 auto;
+  }
+  &__description {
+    font-size: 18px;
+    line-height: 24px;
+    color: $color_txt2;
+    font-family: $font_main;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: 20px;
+    display: flex;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
   }
 }

@@ -7354,7 +7354,9 @@ a.text-dark:focus {
 }
 
 .navbar.fixed-menu {
-  background: rgba(255, 255, 255, 0.8);
+  background: #fff;
+  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
 }
 
 .navbar .navigation-list {
@@ -7544,6 +7546,47 @@ a.text-dark:focus {
   transform: rotate(-15deg);
   position: absolute;
   left: 0;
+}
+
+.climbing-info {
+  background: #EAEFF2;
+  padding: 70px 0 60px;
+  font-family: "RobotoSlab-Regular";
+}
+
+.climbing-info h3 {
+  font-size: 36px;
+  line-height: 32px;
+  font-family: "RobotoSlab-Bold";
+  color: #34383A;
+  margin: 0;
+}
+
+.climbing-info p {
+  font-size: 24px;
+  line-height: 32px;
+  color: #4D5559;
+  margin-bottom: 30px;
+}
+
+.climbing-info__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+}
+
+.climbing-info--description {
+  font-size: 18px;
+  line-height: 24px;
+  color: #4D5559;
+  padding: 0 20px;
 }
 
 @media (min-width: 576px) {

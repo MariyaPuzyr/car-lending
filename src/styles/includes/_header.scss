@@ -1,7 +1,8 @@
 .navbar {
   padding: 15px 0;
   &.fixed-menu {
-    background: rgba($color_white, .8);
+    background: $color_white;
+    box-shadow: 0 1px 8px rgba(0,0,0, 0.15);
   }
   .navigation-list {
     display: flex;

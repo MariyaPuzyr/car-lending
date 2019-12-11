@@ -1,7 +1,8 @@
 nav.navbar.navbar-expand.fixed-top
   .container
     a.navbar-brand(href='#')
-      img(src='/img/svg/logo.svg').img-fluid
+      img(src='/img/svg/logo.svg').img-fluid.d-none.d-md-block
+      img(src='/img/svg/small-logo.svg').d-block.d-md-none
     .navigation-list
       ul.header-info
         li
@@ -18,4 +19,4 @@ nav.navbar.navbar-expand.fixed-top
         li.nav-item
           a.nav-link(href='#reviews') Отзывы
         li.nav-item
-          a.nav-link.btn-buy(href='#') Купить
+          a.nav-link.btn-buy(href='#' data-toggle="modal" data-target="#modal-buy") Купить

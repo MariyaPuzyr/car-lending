@@ -12,7 +12,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand fixed-top">
-      <div class="container"><a class="navbar-brand" href="#"><img class="img-fluid" src="/img/svg/logo.svg"></a>
+      <div class="container"><a class="navbar-brand" href="#"><img class="img-fluid d-none d-md-block" src="/img/svg/logo.svg"><img class="d-block d-md-none" src="/img/svg/small-logo.svg"></a>
         <div class="navigation-list">
           <ul class="header-info">
             <li><a href="#">тел.: +380 0542 655 345</a></li>
@@ -23,7 +23,7 @@
             <li class="nav-item"><a class="nav-link" href="#advantages">Преимущества</a></li>
             <li class="nav-item"><a class="nav-link" href="#gallery">Фото/видео</a></li>
             <li class="nav-item"><a class="nav-link" href="#reviews">Отзывы</a></li>
-            <li class="nav-item"><a class="nav-link btn-buy" href="#">Купить</a></li>
+            <li class="nav-item"><a class="nav-link btn-buy" href="#" data-toggle="modal" data-target="#modal-buy">Купить</a></li>
           </ul>
         </div>
       </div>
@@ -85,7 +85,7 @@
                     </div>
                   </div>
                   <div class="col-md-4">
-                    <button class="btn-buy" type="submit">Купить машинку</button>
+                    <button class="btn-buy" type="submit" data-toggle="modal" data-target="#modal-form">Купить машинку</button>
                   </div>
                   <div class="col-md-4">
                     <div class="car-img-info">
@@ -274,7 +274,7 @@
                 <input class="form-control" type="text" placeholder="Телеефон *">
               </div>
               <div class="col-md-4">
-                <button class="btn-buy" type="submit">Купить машинку</button>
+                <button class="btn-buy" type="submit" data-toggle="modal" data-target="#modal-thanks">Купить машинку</button>
               </div>
             </div>
           </form>

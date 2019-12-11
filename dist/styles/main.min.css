@@ -12985,6 +12985,11 @@ h3 {
 }
 
 @media (max-width: 768px) {
+  .navbar-brand {
+    width: 100px;
+    height: 64px;
+  }
+
   .navbar .navbar-nav {
     display: none;
   }

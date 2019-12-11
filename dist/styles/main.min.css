@@ -7380,9 +7380,13 @@ a.text-dark:focus {
   padding: 0;
   width: 224px;
   height: 83px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
-.navbar.navbar-expand-md .navbar-nav {
+.navbar .navbar-nav {
   margin: 15px 0 0;
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -7390,7 +7394,7 @@ a.text-dark:focus {
   align-items: center;
 }
 
-.navbar.navbar-expand-md .navbar-nav .nav-link {
+.navbar .navbar-nav .nav-link {
   font-size: 20px;
   line-height: 26px;
   color: #34383A;
@@ -7403,12 +7407,12 @@ a.text-dark:focus {
   padding: 0;
 }
 
-.navbar.navbar-expand-md .navbar-nav .nav-link:hover {
+.navbar .navbar-nav .nav-link:hover {
   color: #4ECD00;
   text-decoration: none;
 }
 
-.navbar.navbar-expand-md .navbar-nav .nav-link.btn-buy {
+.navbar .navbar-nav .nav-link.btn-buy {
   text-transform: uppercase;
   color: #fff;
   background: #4ECD00;
@@ -7417,7 +7421,7 @@ a.text-dark:focus {
   margin: 0;
 }
 
-.navbar.navbar-expand-md .navbar-nav .nav-link.btn-buy:hover {
+.navbar .navbar-nav .nav-link.btn-buy:hover {
   color: #4ECD00;
   background: #fff;
 }
@@ -7434,6 +7438,11 @@ a.text-dark:focus {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
 }
 
 .navbar .header-info a {
@@ -7504,6 +7513,17 @@ footer {
 .full-car-info {
   background: #fff;
   font-family: "RobotoSlab-Regular";
+  position: relative;
+  padding-bottom: 55px;
+}
+
+.full-car-info::after {
+  content: '';
+  width: 100%;
+  height: 65px;
+  background: url("../img/grey_bg_top3_c.png") no-repeat top right;
+  position: absolute;
+  bottom: -65px;
 }
 
 .full-car-info h5 {
@@ -7519,15 +7539,17 @@ footer {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .full-car-info__price .old-price {
@@ -7555,6 +7577,179 @@ footer {
   transform: rotate(-15deg);
   position: absolute;
   left: 0;
+}
+
+.full-car-info__price .new-price {
+  font-size: 50px;
+  line-height: 66px;
+  font-family: "RobotoSlab-Bold";
+  color: #34383A;
+  margin-left: 25px;
+}
+
+.full-car-info__price .discount {
+  text-align: center;
+  font-size: 32px;
+  line-height: 39px;
+  color: #FF6B00;
+  padding: 2px 30px 5px;
+  margin-left: 20px;
+  border: 2px solid #FF6B00;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.full-car-info .select-color {
+  font-size: 18px;
+  line-height: 26px;
+  color: #4D5559;
+  font-family: "RobotoSlab-Regular";
+  margin-bottom: 10px;
+}
+
+.full-car-info .color-item label::after {
+  content: '';
+  width: 49px;
+  height: 49px;
+  position: absolute;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #3FA1E9;
+}
+
+.full-car-info .color-item input[type=radio].css-radio + label.css-label {
+  width: 65px;
+  height: 65px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 30px 0 0;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 2px solid #C8CED0;
+}
+
+.full-car-info .color-item input[type=radio].css-radio:checked + label.css-label {
+  border: 2px solid #4D5559;
+}
+
+.full-car-info .orange-color label::after {
+  background: #FF6B00;
+}
+
+.full-car-info .green-color label::after {
+  background: #4ECD00;
+}
+
+.full-car-info .red-color label::after {
+  background: #EE0707;
+}
+
+.full-car-info input[type=radio].css-radio {
+  display: none;
+}
+
+.full-car-info .car-title {
+  margin-bottom: 10px;
+  width: 160px;
+}
+
+.full-car-info .car-title input[type=radio].css-radio + label.css-label {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  font-size: 18px;
+  line-height: 32px;
+  color: #34383A;
+  font-family: "RobotoSlab-Bold";
+  border: 2px solid #C8CED0;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+}
+
+.full-car-info .car-title input[type=radio].css-radio:checked + label.css-label {
+  border: 2px solid #4D5559;
+}
+
+.full-car-info .car-img-info .car {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: start;
+  -ms-flex-align: start;
+  align-items: start;
+}
+
+.full-car-info .car-img-info .car.active {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.full-car-info .car-img-info .car .settings-ico {
+  margin-left: auto;
+}
+
+.full-car-info .btn-buy {
+  text-transform: uppercase;
+  width: 100%;
+  border: 1px solid #4ECD00;
+  background: #4ECD00;
+  color: #fff;
+  padding: 15px 5px;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "RobotoSlab-Bold";
+}
+
+.full-car-info .car-img {
+  position: absolute;
+  right: 0;
+  top: -275px;
 }
 
 .climbing-info {
@@ -12782,6 +12977,24 @@ h3 {
 }
 
 @media (max-width: 768px) {
+  .navbar .navbar-nav {
+    display: none;
+  }
+
+  .navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+  }
+
+  .navbar .container {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
   .banner {
     min-height: 500px;
     -webkit-background-size: cover;

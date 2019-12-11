@@ -11,23 +11,20 @@
     <link rel="stylesheet" href="./styles/main.min.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-md fixed-top">
-      <div class="container"><a class="navbar-brand" href="#"><img class="img-fluid" src="/img/logo.png"></a>
-        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="navbar-collapse collapse" id="navbarCollapse">
-          <div class="navigation-list">
-            <ul class="header-info">
-              <li><a href="#">тел.: +380 0542 655 345</a></li>
-              <li><a href="#">e-mail: monstercar@gmail.com</a></li>
-            </ul>
-            <ul class="navbar-nav">
-              <li class="nav-item"><a class="nav-link" href="#description">Описание</a></li>
-              <li class="nav-item"><a class="nav-link" href="#advantages">Преимущества</a></li>
-              <li class="nav-item"><a class="nav-link" href="#gallery">Фото/видео</a></li>
-              <li class="nav-item"><a class="nav-link" href="#reviews">Отзывы</a></li>
-              <li class="nav-item"><a class="nav-link btn-buy" href="#">Купить</a></li>
-            </ul>
-          </div>
+    <nav class="navbar navbar-expand fixed-top">
+      <div class="container"><a class="navbar-brand" href="#"><img class="img-fluid" src="/img/svg/logo.svg"></a>
+        <div class="navigation-list">
+          <ul class="header-info">
+            <li><a href="#">тел.: +380 0542 655 345</a></li>
+            <li><a href="#">e-mail: monstercar@gmail.com</a></li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#description">Описание</a></li>
+            <li class="nav-item"><a class="nav-link" href="#advantages">Преимущества</a></li>
+            <li class="nav-item"><a class="nav-link" href="#gallery">Фото/видео</a></li>
+            <li class="nav-item"><a class="nav-link" href="#reviews">Отзывы</a></li>
+            <li class="nav-item"><a class="nav-link btn-buy" href="#">Купить</a></li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -45,22 +42,62 @@
       <section class="full-car-info">
         <div class="container">
           <div class="row">
-            <div class="col-md-7">
-              <h5>Большие машинки на радио управлении.<br>Ездят в любом направлении по самым сложным трассам.</h5>
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-7">
+                  <h5>Большие машинки на радио управлении.<br>Ездят в любом направлении по самым сложным трассам.</h5>
+                  <div class="full-car-info__price">
+                    <div class="old-price">1799 грн</div>
+                    <div class="new-price">1133 грн</div>
+                    <div class="discount">скидка 37%</div>
+                  </div>
+                </div>
+              </div>
+              <div class="select-color">Выберите цвет и модель вашей машинки</div>
+              <form action="">
+                <div class="row d-flex">
+                  <div class="col-md-2 car-title">
+                    <input class="css-radio" id="racing" type="radio" name="car" checked="checked">
+                    <label class="css-label" for="racing">Racing Car</label>
+                  </div>
+                  <div class="col-md-2 car-title">
+                    <input class="css-radio" id="climbing" type="radio" name="car">
+                    <label class="css-label" for="climbing">Climbing King</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4 d-flex">
+                    <div class="color-item blue-color">
+                      <input class="css-radio" id="blue" type="radio" name="color" checked="checked">
+                      <label class="css-label" for="blue"></label>
+                    </div>
+                    <div class="color-item orange-color">
+                      <input class="css-radio" id="orange" type="radio" name="color">
+                      <label class="css-label" for="orange"></label>
+                    </div>
+                    <div class="color-item green-color">
+                      <input class="css-radio" id="green" type="radio" name="color">
+                      <label class="css-label" for="green"></label>
+                    </div>
+                    <div class="color-item red-color">
+                      <input class="css-radio" id="red" type="radio" name="color">
+                      <label class="css-label" for="red"></label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <button class="btn-buy" type="submit">Купить машинку</button>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="car-img-info">
+                      <div class="car blue active"><img class="car-img" src="./img/img_prod_rc_blue_s.jpg"><img class="settings-ico" src="./img/rc-settings.png"></div>
+                      <div class="car orange"><img class="car-img" src="./img/img_prod_rc_orange_s.jpg"><img class="settings-ico" src="./img/rc-settings.png"></div>
+                      <div class="car red"><img class="car-img" src="./img/img_prod_ck_red_s.jpg"><img class="settings-ico" src="./img/ck-settings.png"></div>
+                      <div class="car green"><img class="car-img" src="./img/img_prod_ck_green_s.jpg"><img class="settings-ico" src="./img/ck-settings.png"></div>
+                    </div>
+                  </div>
+                </div>
+              </form>
             </div>
-          </div>
-          <div class="full-car-info__price">
-            <div class="old-price">1799 грн</div>
-            <div class="new-price">1133 грн</div>
-            <div class="discount">скидка 37%</div>
-          </div>
-          <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item"><a class="nav-link active" id="racing-tab" data-toggle="tab" href="#racing" role="tab" aria-controls="racing" aria-selected="true">Racing Car</a></li>
-            <li class="nav-item"><a class="nav-link" id="climbing-tab" data-toggle="tab" href="#climbing" role="tab" aria-controls="climbing" aria-selected="false">Climbing King</a></li>
-          </ul>
-          <div class="tab-content">
-            <div class="tab-pane active" id="racing" role="tabpanel" aria-labelledby="racing-tab">...</div>
-            <div class="tab-pane" id="climbing" role="tabpanel" aria-labelledby="climbing-tab">...</div>
           </div>
         </div>
       </section>

@@ -1,6 +1,16 @@
 .full-car-info {
   background: $color_white;
   font-family: $font_main;
+  position: relative;
+  padding-bottom: 55px;
+  &::after {
+    content: '';
+    width: 100%;
+    height: 65px;
+    background: url('../img/grey_bg_top3_c.png') no-repeat top right;
+    position: absolute;
+    bottom: -65px;
+  }
   h5 {
     font-size: 24px;
     line-height: 32px;
@@ -10,8 +20,10 @@
   }
   &__price {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     flex-flow: row wrap;
+    margin-top: 10px;
+    margin-bottom: 15px;
     .old-price {
       font-size: 32px;
       line-height: 42px;
@@ -29,5 +41,121 @@
         left: 0;
       }
     }
+    .new-price {
+      font-size: 50px;
+      line-height: 66px;
+      font-family: $font_bold;
+      color: $color_txt;
+      margin-left: 25px;
+    }
+    .discount {
+      text-align: center;
+      font-size: 32px;
+      line-height: 39px;
+      color: $color_orange;
+      padding: 2px 30px 5px;
+      margin-left: 20px;
+      border: 2px solid $color_orange;
+      border-radius: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      white-space: nowrap;
+    }
+  }
+  .select-color {
+    font-size: 18px;
+    line-height: 26px;
+    color: $color_bord;
+    font-family: $font_main;
+    margin-bottom: 10px;
+  }
+  .color-item {
+    label {
+      &::after {
+        content: '';
+        width: 49px;
+        height: 49px;
+        position: absolute;
+        border-radius: 50%;
+        background: $color_blue;
+      }
+    }
+    input[type=radio].css-radio + label.css-label {
+      width: 65px;
+      height: 65px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 30px 0 0;
+      cursor: pointer;
+      transition: .3s;
+      border-radius: 50%;
+      border: 2px solid $color_grey2;
+    }
+    input[type=radio].css-radio:checked + label.css-label {
+      border: 2px solid $color_bord;
+    }
+  }
+  .orange-color label::after {
+    background: $color_orange;
+  }
+  .green-color label::after {
+    background: $color_green;
+  }
+  .red-color label::after {
+    background: $color_red;
+  }
+  input[type=radio].css-radio {
+    display: none;
+  }
+  .car-title {
+    margin-bottom: 10px;
+    width: 160px;
+    input[type=radio].css-radio + label.css-label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: .3s;
+      font-size: 18px;
+      line-height: 32px;
+      color: $color_txt;
+      font-family: $font_bold;
+      border: 2px solid $color_grey2;
+      border-radius: 25px;
+    }
+    input[type=radio].css-radio:checked + label.css-label {
+      border: 2px solid $color_bord;
+    }
+  }
+  .car-img-info {
+    .car {
+      display: none;
+      flex-direction: column;
+      align-items: start;
+      &.active {
+        display: flex;
+      }
+      .settings-ico {
+        margin-left: auto;
+      }
+    }
+  }
+  .btn-buy {
+    text-transform: uppercase;
+    width: 100%;
+    border: 1px solid $color_green;
+    background: $color_green;
+    color: $color_white;
+    padding: 15px 5px;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: $font_bold;
+  }
+  .car-img {
+    position: absolute;
+    right: 0;
+    top: -275px;
   }
 }

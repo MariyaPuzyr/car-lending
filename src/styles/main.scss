@@ -7,3 +7,14 @@
 @import "includes/footer";
 @import "components/component";
 @import "sections/section";
+
+h3 {
+  font-size: 36px;
+  line-height: 32px;
+  font-family: $font_bold;
+  color: $color_txt;
+  margin: 0;
+  @include adapt_to('large-phone') {
+    font-size: 28px;
+  }
+}

@@ -55,20 +55,21 @@ $(document).ready(function () {
 
   $('.car-item').click(function () {
     $('.color-item').removeClass('active');
-    // if($(this).is(":checked")) {
-    //   $(this).parents('.car-title').addClass('test');
-    //   console.log('Дайте свое согласие на обработку данных!');
-    // } else
     if($(this).parents('.car-title').hasClass('climbing-car')) {
-      console.log('--------');
       $('.color-item.green-color').addClass('active');
+      $('.racing-car').removeClass('active');
+      $('.climbing-car[data-color="green-color"]').addClass('active');
     } else {
       $('.color-item.blue-color').addClass('active');
+      $('.racing-car[data-color="blue-color"]').addClass('active');
+      $('.climbing-car').removeClass('active');
     }
   });
 
   $('.color-item').click(function () {
-    $('.color-item').removeClass('active');
+    $('.color-item, .car').removeClass('active');
     $(this).addClass('active');
+    var colorClass = $(this).attr('id');
+    $(".car[data-color='"+colorClass+"']").addClass('active');
   })
 });

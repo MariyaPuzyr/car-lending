@@ -7444,6 +7444,15 @@ a.text-dark:focus {
   margin-left: 10px;
 }
 
+footer {
+  background: #77A4C5;
+  color: #fff;
+  padding: 20px 0;
+  font-size: 16px;
+  line-height: 21px;
+  font-family: "RobotoSlab-Regular";
+}
+
 .banner {
   min-height: 600px;
   background: url("../img/lolo_car_landing_head5.jpg") no-repeat bottom;

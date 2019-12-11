@@ -7,6 +7,7 @@
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+    flex-flow: row wrap;
   }
   &__title {
     font-size: 24px;
@@ -20,6 +21,7 @@
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 15px;
+    flex-flow: row wrap;
     &-item:nth-child(1) {
       margin-right: 15px;
     }
@@ -33,5 +35,25 @@
     line-height: 26px;
     height: auto;
     color: $color_txt2;
+  }
+  .btn-buy {
+    background: $color_green;
+    color: $color_white;
+    text-transform: uppercase;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: $font_bold;
+    border: 1px solid $color_green;
+    margin-bottom: 25px;
+    width: 100%;
+    transition: .3s;
+    &:hover {
+      background: $color_white;
+      color: $color_green;
+    }
   }
 }

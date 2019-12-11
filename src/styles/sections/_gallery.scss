@@ -1,3 +1,47 @@
 .gallery {
   padding-top: 40px;
+  &-items {
+    display: flex;
+    flex-flow: row wrap;
+    a {
+      width: 25%;
+      height: auto;
+      overflow: hidden;
+      display: none;
+      background-size: cover;
+      img {
+        max-width: 100%;
+        height: auto;
+        transition: .3s;
+      }
+      &:hover img {
+        transform: scale(1.1);
+      }
+      &:nth-child(-n+8) {
+        display: block;
+      }
+      @include adapt_to('large-phone') {
+        width: 50%;
+      }
+    }
+  }
+}
+.fancybox-thumbs {
+  top: auto;
+  width: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 95px;
+  padding: 10px 10px 5px 10px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.fancybox-show-thumbs .fancybox-inner {
+  right: 0;
+  bottom: 95px;
+}
+@media all and (min-width: 800px) {
+
 }

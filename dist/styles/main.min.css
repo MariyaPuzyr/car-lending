@@ -7744,6 +7744,14 @@ footer {
   font-size: 24px;
   line-height: 32px;
   font-family: "RobotoSlab-Bold";
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.full-car-info .btn-buy:hover {
+  color: #4ECD00;
+  background: #fff;
 }
 
 .full-car-info .car-img {

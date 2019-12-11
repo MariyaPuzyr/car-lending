@@ -14,11 +14,11 @@ section.full-car-info
         .select-color Выберите цвет и модель вашей машинки
         form(action='')
           .row.d-flex
-            .col-md-2.car-title
-              input#racing.css-radio(type='radio', name='car' checked='checked')
+            .col-md-2.car-title.racing-car
+              input#racing.car-item(type='radio', name='car' checked='checked')
               label.css-label(for='racing') Racing Car
-            .col-md-2.car-title
-              input#climbing.css-radio(type='radio', name='car')
+            .col-md-2.car-title.climbing-car
+              input#climbing.car-item(type='radio', name='car')
               label.css-label(for='climbing') Climbing King
           .row
             .col-md-4.d-flex
@@ -38,15 +38,15 @@ section.full-car-info
               button(type='submit' data-toggle="modal" data-target="#modal-form").btn-buy Купить машинку
             .col-md-4
               .car-img-info
-                .car.blue.active
+                .car.blue.active.racing-car
                   img(src='./img/img_prod_rc_blue_s.jpg').car-img
                   img(src='./img/rc-settings.png').settings-ico
-                .car.orange
+                .car.orange.racing-car
                   img(src='./img/img_prod_rc_orange_s.jpg').car-img
                   img(src='./img/rc-settings.png').settings-ico
-                .car.red
+                .car.red.climbing-car
                   img(src='./img/img_prod_ck_red_s.jpg').car-img
                   img(src='./img/ck-settings.png').settings-ico
-                .car.green
+                .car.green.climbing-car
                   img(src='./img/img_prod_ck_green_s.jpg').car-img
                   img(src='./img/ck-settings.png').settings-ico

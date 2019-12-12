@@ -113,6 +113,41 @@
     }
   }
 }
+@media (max-width: 767px) {
+  .modal-dialog {
+    .mobile-cover {
+      position: relative;
+      display: flex;
+      .row {
+        width: auto;
+        flex-flow: column nowrap;
+        min-width: 200px;
+        &.color-select {
+          min-width: inherit;
+        }
+      }
+    }
+    .color-select {
+      .col-md-4 {
+        width: 110px;
+        padding: 0;
+        flex-flow: row wrap;
+      }
+    }
+    .color-item {
+      input[type=radio] + label {
+        margin-right: 12px;
+      }
+      &:nth-child(2) {
+        margin-bottom: 20px;
+      }
+    }
+    .car-title input[type=radio] + label {
+      min-width: 140px;
+      font-size: 17px;
+    }
+  }
+}
 
 .modal-backdrop {
   background: rgba(#293B44, .2);

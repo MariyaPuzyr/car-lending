@@ -22,27 +22,28 @@
                   img(src='./img/img_prod_ck_red_s.jpg').car-img.img-fluid.m-auto.m-md-0
                   img(src='./img/ck-settings.png').settings-ico.ml-0.mr-auto.img-fluid
               .select-color Выберите цвет и модель вашей машинки
-              .row.d-flex
-                .col-md-6.car-title.racing-car
-                  input#racing.car-item(type='radio', name='car')
-                  label.css-label(for='racing') Racing Car
-                .col-md-6.car-title.climbing-car
-                  input#climbing.car-item(type='radio', name='car')
-                  label.css-label(for='climbing') Climbing King
-              .row
-                .col-md-4.d-flex
-                  .color-item.blue-color#blue-color
-                    input#blue.css-radio(type='radio', name='color')
-                    label.css-label(for='blue')
-                  .color-item.orange-color#orange-color
-                    input#orange.css-radio(type='radio', name='color')
-                    label.css-label(for='orange')
-                  .color-item.green-color#green-color
-                    input#green.css-radio(type='radio', name='color')
-                    label.css-label(for='green')
-                  .color-item.red-color#red-color
-                    input#red.css-radio(type='radio', name='color')
-                    label.css-label(for='red')
+              .mobile-cover
+                .row
+                  .col-md-6.col-6.car-title.racing-car
+                    input#racing.car-item(type='radio', name='car')
+                    label.css-label(for='racing') Racing Car
+                  .col-md-6.col-6.car-title.climbing-car
+                    input#climbing.car-item(type='radio', name='car')
+                    label.css-label(for='climbing') Climbing King
+                .row.color-select
+                  .col-md-4.d-flex
+                    .color-item.blue-color#blue-color
+                      input#blue.css-radio(type='radio', name='color')
+                      label.css-label(for='blue')
+                    .color-item.orange-color#orange-color
+                      input#orange.css-radio(type='radio', name='color')
+                      label.css-label(for='orange')
+                    .color-item.green-color#green-color
+                      input#green.css-radio(type='radio', name='color')
+                      label.css-label(for='green')
+                    .color-item.red-color#red-color
+                      input#red.css-radio(type='radio', name='color')
+                      label.css-label(for='red')
             .col-md-6
               .full-car-info__price
                 .old-price 1799 грн

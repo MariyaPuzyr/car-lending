@@ -8363,6 +8363,12 @@ input[type=radio] {
   margin-right: 15px;
 }
 
+.order-form .btn-buy {
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
 .order-form .btn-buy:hover {
   background: #FF8A00;
   border: 1px solid #FF8A00;

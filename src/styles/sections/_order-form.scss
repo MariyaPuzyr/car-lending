@@ -26,9 +26,12 @@
       margin-right: 15px;
     }
   }
-  .btn-buy:hover {
-    background: #FF8A00;
-    border: 1px solid #FF8A00;
-    color: $color_white;
+  .btn-buy {
+    transition: none;
+    &:hover {
+      background: #FF8A00;
+      border: 1px solid #FF8A00;
+      color: $color_white;
+    }
   }
 }

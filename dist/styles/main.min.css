@@ -13505,6 +13505,30 @@ h3 {
   }
 }
 
+@media (min-width: 768px) and (max-width: 900px) {
+  .navbar .navigation-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .navbar .header-info {
+    margin-right: 20px;
+  }
+
+  .navbar .navbar-nav {
+    margin-top: 0;
+  }
+
+  .navbar .navbar-nav .nav-link.btn-buy {
+    padding: 12px 30px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 992px) {
   .full-car-info .car-img {
     max-width: 100%;

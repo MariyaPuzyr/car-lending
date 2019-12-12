@@ -1,6 +1,6 @@
 .navbar {
   padding: 15px 0;
-  @media (max-width:767px) {
+  @media (max-width: 767px) {
     padding: 10px 0;
   }
   @media (min-width: 768px) and (max-width: 1024px) {
@@ -25,7 +25,7 @@
     height: 83px;
     flex: 0 0 auto;
     display: flex;
-    @media (max-width:767px) {
+    @media (max-width: 767px) {
       width: 100px;
       height: 64px;
       margin-right: 5px;
@@ -67,7 +67,7 @@
           border-color: $color_blue;
         }
       }
-      @media (max-width:900px) {
+      @media (max-width: 900px) {
         display: none;
         &.btn-buy {
           display: flex;
@@ -83,7 +83,7 @@
         line-height: 24px;
       }
     }
-    @media (max-width:767px) {
+    @media (max-width: 767px) {
       margin-top: 5px;
       margin-right: 30px;
     }
@@ -102,7 +102,7 @@
       font-family: $font_main;
       margin-left: 20px;
     }
-    @media (max-width:767px) {
+    @media (max-width: 767px) {
       margin-right: 30px;
       a {
         font-size: 12px;
@@ -116,7 +116,26 @@
       justify-content: flex-end;
     }
   }
-  @media (max-width:767px) {
+  @media (max-width: 767px) {
     flex-flow: column wrap;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .navbar {
+    .navigation-list {
+      flex-direction: row;
+    }
+    .header-info {
+      margin-right: 20px;
+    }
+    .navbar-nav {
+      margin-top: 0;
+      .nav-link.btn-buy {
+        padding: 12px 30px;
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
   }
 }

@@ -165,3 +165,11 @@
     }
   }
 }
+@media (max-width: 575px) {
+  .navbar-brand {
+    width: 76px;
+  }
+  .navbar .header-info a {
+    font-size: 14px;
+  }
+}

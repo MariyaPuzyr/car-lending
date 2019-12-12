@@ -14070,6 +14070,59 @@ h3 {
   }
 }
 
+@media (min-width: 576px) and (max-width: 767px) {
+  .navbar .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .navbar .navigation-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: auto;
+  }
+
+  .navbar .header-info {
+    margin-right: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+
+  .navbar .header-info a {
+    font-size: 16px;
+  }
+
+  .navbar .navbar-nav {
+    margin-top: 0;
+    margin-right: 0;
+  }
+
+  .navbar .navbar-nav .nav-link.btn-buy {
+    padding: 12px 30px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .banner {
+    padding-top: 95px;
+  }
+
+  .banner .container::before {
+    height: 226px;
+    top: 90px;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 992px) {
   .modal-dialog .car-title {
     max-width: initial;

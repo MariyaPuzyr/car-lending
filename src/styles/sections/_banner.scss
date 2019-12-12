@@ -5,7 +5,7 @@
   padding-top: 150px;
   font-family: $font_bold;
   color: $color_txt;
-  @media (max-width:767px) {
+  @media (max-width: 767px) {
     min-height: 450px;
     background-size: cover;
     padding-top: 125px;
@@ -24,11 +24,11 @@
     bottom: -1px;
     background: url('../img/svg/top-bg.svg') no-repeat bottom;
     background-size: contain;
-    @media (max-width: 1360px ) {
+    @media (max-width: 1360px) {
       background-size: cover;
       height: 98px;
     }
-    @media (max-width:767px) {
+    @media (max-width: 767px) {
       background-position: center;
     }
   }
@@ -36,7 +36,7 @@
     margin: 0;
     font-size: 46px;
     line-height: normal;
-    @media (max-width:767px) {
+    @media (max-width: 767px) {
       font-size: 36px;
       text-align: center;
     }
@@ -47,7 +47,7 @@
   h4 {
     font-size: 24px;
     line-height: normal;
-    @media (max-width:767px) {
+    @media (max-width: 767px) {
       font-size: 20px;
       text-align: center;
     }
@@ -58,7 +58,7 @@
       font-size: 20px;
     }
   }
-  .container{
+  .container {
     position: relative;
     &::before {
       content: '';
@@ -70,7 +70,7 @@
       height: 374px;
       top: 40px;
       right: 60px;
-      @media (max-width:767px) {
+      @media (max-width: 767px) {
         max-width: 100%;
         height: 136px;
         right: auto;
@@ -87,6 +87,15 @@
         right: 30px;
         max-width: 706px;
       }
+    }
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .banner {
+    padding-top: 95px;
+    .container::before {
+      height: 226px;
+      top: 90px;
     }
   }
 }

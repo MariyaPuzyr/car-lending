@@ -191,10 +191,14 @@
         margin-bottom: 15px;
       }
     }
-    .car-title input[type=radio] + label {
-      min-width: 140px;
-      font-size: 17px;
-      line-height: 36px;
+    .car-title {
+      margin-bottom: 15px;
+      input[type=radio] + label {
+        min-width: 140px;
+        font-size: 17px;
+        line-height: 36px;
+        max-width: 140px;
+      }
     }
   }
 }

@@ -13908,10 +13908,15 @@ h3 {
     margin-bottom: 15px;
   }
 
+  .modal-dialog .car-title {
+    margin-bottom: 15px;
+  }
+
   .modal-dialog .car-title input[type=radio] + label {
     min-width: 140px;
     font-size: 17px;
     line-height: 36px;
+    max-width: 140px;
   }
 
   .color-item label::after {

@@ -36,4 +36,10 @@
       font-family: $font_main;
     }
   }
+  @media (min-width: 980px) {
+    .col-md-12 {
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%;
+    }
+  }
 }

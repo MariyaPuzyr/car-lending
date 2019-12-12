@@ -8588,7 +8588,7 @@ input[type=radio] {
 }
 
 .gallery .slick-slide {
-  margin-bottom: -5px;
+  margin-bottom: -7px;
 }
 
 .gallery .slick-prev,
@@ -11329,6 +11329,14 @@ h3 {
     flex: 0 0 33.33333%;
     max-width: 33.33333%;
   }
+
+  .reviews .col-md-12 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 33.33333%;
+    -ms-flex: 0 0 33.33333%;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -13575,6 +13583,12 @@ h3 {
 
   .climbing-info .characteristics-item:last-child {
     border-right: 2px solid rgba(119, 164, 197, 0.2);
+  }
+}
+
+@media (max-width: 980px) {
+  .gallery-items a {
+    width: 50%;
   }
 }
 

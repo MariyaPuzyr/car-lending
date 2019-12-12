@@ -7823,6 +7823,8 @@ footer {
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
+  z-index: 2;
+  position: relative;
 }
 
 .full-car-info .btn-buy:hover {
@@ -7935,7 +7937,7 @@ input[type=radio] {
 }
 
 .color-item input[type=radio] + label:hover {
-  border-color: #3FA1E9;
+  border-color: #4D5559;
 }
 
 .color-item.active input[type=radio] + label {
@@ -7943,31 +7945,19 @@ input[type=radio] {
 }
 
 .color-item.active input[type=radio] + label:hover {
-  border-color: #3FA1E9;
+  border-color: #4D5559;
 }
 
 .orange-color label::after {
   background: #FF6B00;
 }
 
-.orange-color input[type=radio] + label:hover {
-  border-color: #FF6B00;
-}
-
 .green-color label::after {
   background: #4ECD00;
 }
 
-.green-color input[type=radio] + label:hover {
-  border-color: #4ECD00;
-}
-
 .red-color label::after {
   background: #EE0707;
-}
-
-.red-color input[type=radio] + label:hover {
-  border-color: #EE0707;
 }
 
 .climbing-info {

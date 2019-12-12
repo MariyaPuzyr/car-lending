@@ -7,7 +7,9 @@
           .row
             .col-md-6
               .car-img-info
-                .car.active.racing-car(data-color='blue-color')
+                .car.active
+                  img(src='./img/img-rc-car.png').car-img.img-fluid
+                .car.racing-car(data-color='blue-color')
                   img(src='./img/img_prod_rc_blue_s.jpg').car-img.img-fluid
                   img(src='./img/rc-settings.png').settings-ico.ml-0.mr-auto.img-fluid
                 .car.racing-car(data-color='orange-color')
@@ -22,15 +24,15 @@
               .select-color Выберите цвет и модель вашей машинки
               .row.d-flex
                 .col-md-6.car-title.racing-car
-                  input#racing.car-item(type='radio', name='car' checked='checked')
+                  input#racing.car-item(type='radio', name='car')
                   label.css-label(for='racing') Racing Car
                 .col-md-6.car-title.climbing-car
                   input#climbing.car-item(type='radio', name='car')
                   label.css-label(for='climbing') Climbing King
               .row
                 .col-md-4.d-flex
-                  .color-item.blue-color.active#blue-color
-                    input#blue.css-radio(type='radio', name='color' checked='checked')
+                  .color-item.blue-color#blue-color
+                    input#blue.css-radio(type='radio', name='color')
                     label.css-label(for='blue')
                   .color-item.orange-color#orange-color
                     input#orange.css-radio(type='radio', name='color')

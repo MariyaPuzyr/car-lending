@@ -60,6 +60,13 @@
           width: 100px;
         }
       }
+      @include adapt_to('large-phone') {
+        margin-right: 18px;
+        font-size: 20px;
+        &::after {
+          width: 85px;
+        }
+      }
     }
     .new-price {
       font-size: 50px;
@@ -67,6 +74,12 @@
       font-family: $font_bold;
       color: $color_txt;
       margin-right: 20px;
+      @include adapt_to('large-phone') {
+        font-size: 40px;
+        line-height: normal;
+        order: 3;
+        width: 100%;
+      }
     }
     .discount {
       text-align: center;
@@ -83,6 +96,12 @@
       @media (min-width: 768px) and (max-width: 900px) {
         font-size: 24px;
         line-height: 32px;
+      }
+      @include adapt_to('large-phone') {
+        margin-left: 0;
+        font-size: 20px;
+        padding: 0 20px;
+        margin-right: 0;
       }
     }
     @media (min-width: 768px) and (max-width: 1024px) {
@@ -101,6 +120,9 @@
     position: relative;
     @media (min-width: 768px) and (max-width: 900px) {
       font-size: 16px;
+    }
+    @include adapt_to('large-phone') {
+      line-height: 20px;
     }
   }
   .car {

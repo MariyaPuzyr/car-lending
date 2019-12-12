@@ -13291,6 +13291,36 @@ h3 {
     line-height: normal;
   }
 
+  .full-car-info__price .old-price {
+    margin-right: 18px;
+    font-size: 20px;
+  }
+
+  .full-car-info__price .old-price::after {
+    width: 85px;
+  }
+
+  .full-car-info__price .new-price {
+    font-size: 40px;
+    line-height: normal;
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+    -ms-flex-order: 3;
+    order: 3;
+    width: 100%;
+  }
+
+  .full-car-info__price .discount {
+    margin-left: 0;
+    font-size: 20px;
+    padding: 0 20px;
+    margin-right: 0;
+  }
+
+  .full-car-info .select-color {
+    line-height: 20px;
+  }
+
   .car-title {
     margin-bottom: 5px;
   }

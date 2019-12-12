@@ -8488,7 +8488,7 @@ input[type=radio] {
 }
 
 .faq .card:hover .card-header {
-  color: #4ECD00;
+  text-decoration: underline;
 }
 
 .faq .card-header {

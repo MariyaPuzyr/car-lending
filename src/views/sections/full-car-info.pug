@@ -13,15 +13,16 @@ section.full-car-info
               .discount скидка 37%
         .select-color Выберите цвет и модель вашей машинки
         form(action='')
-          .row.d-flex
-            .col-md-2.car-title.racing-car
-              input#racing.car-item(type='radio', name='car')
-              label.css-label(for='racing') Racing Car
-            .col-md-2.car-title.climbing-car
-              input#climbing.car-item(type='radio', name='car')
-              label.css-label(for='climbing') Climbing King
           .row.form-positions
-            .col-md-6.col-lg-4.d-flex
+            .col-md-12.car-color
+              .row
+                .col-md-2.car-title.racing-car
+                  input#racing.car-item(type='radio', name='car')
+                  label.css-label(for='racing') Racing Car
+                .col-md-2.car-title.climbing-car
+                  input#climbing.car-item(type='radio', name='car')
+                  label.css-label(for='climbing') Climbing King
+            .col-md-6.col-lg-4.d-flex.car-color__check
               .color-item.blue-color#blue-color
                 input#blue.css-radio(type='radio', name='color')
                 label.css-label(for='blue')
@@ -34,9 +35,9 @@ section.full-car-info
               .color-item.red-color#red-color
                 input#red.css-radio(type='radio', name='color')
                 label.css-label(for='red')
-            .col-md-6.col-lg-4
+            .col-md-6.col-lg-4.car-btn
               button(type='submit' data-toggle="modal" data-target="#modal-form").btn-buy Купить машинку
-            .col-md-6.col-lg-4
+            .col-md-6.col-lg-4.car-color__image
               .car-img-info
                 .car.active
                   img(src='./img/img-rc-car.png').car-img

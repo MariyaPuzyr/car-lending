@@ -133,6 +133,9 @@
   }
 }
 @media (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
   .modal-dialog {
     .mobile-cover {
       position: relative;

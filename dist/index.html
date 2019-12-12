@@ -56,18 +56,20 @@
               </div>
               <div class="select-color">Выберите цвет и модель вашей машинки</div>
               <form action="">
-                <div class="row d-flex">
-                  <div class="col-md-2 car-title racing-car">
-                    <input class="car-item" id="racing" type="radio" name="car">
-                    <label class="css-label" for="racing">Racing Car</label>
-                  </div>
-                  <div class="col-md-2 car-title climbing-car">
-                    <input class="car-item" id="climbing" type="radio" name="car">
-                    <label class="css-label" for="climbing">Climbing King</label>
-                  </div>
-                </div>
                 <div class="row form-positions">
-                  <div class="col-md-6 col-lg-4 d-flex">
+                  <div class="col-md-12 car-color">
+                    <div class="row">
+                      <div class="col-md-2 car-title racing-car">
+                        <input class="car-item" id="racing" type="radio" name="car">
+                        <label class="css-label" for="racing">Racing Car</label>
+                      </div>
+                      <div class="col-md-2 car-title climbing-car">
+                        <input class="car-item" id="climbing" type="radio" name="car">
+                        <label class="css-label" for="climbing">Climbing King</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 d-flex car-color__check">
                     <div class="color-item blue-color" id="blue-color">
                       <input class="css-radio" id="blue" type="radio" name="color">
                       <label class="css-label" for="blue"></label>
@@ -85,10 +87,10 @@
                       <label class="css-label" for="red"></label>
                     </div>
                   </div>
-                  <div class="col-md-6 col-lg-4">
+                  <div class="col-md-6 col-lg-4 car-btn">
                     <button class="btn-buy" type="submit" data-toggle="modal" data-target="#modal-form">Купить машинку</button>
                   </div>
-                  <div class="col-md-6 col-lg-4">
+                  <div class="col-md-6 col-lg-4 car-color__image">
                     <div class="car-img-info">
                       <div class="car active"><img class="car-img" src="./img/img-rc-car.png"></div>
                       <div class="car racing-car" data-color="blue-color"><img class="car-img" src="./img/img_prod_rc_blue_s.jpg"><img class="settings-ico" src="./img/rc-settings.png"></div>

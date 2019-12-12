@@ -1,5 +1,14 @@
 .gallery {
   padding-top: 40px;
+  h3 {
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 24px;
+    color: $color_bord;
+    font-family: $font_main;
+  }
   &-items {
     display: flex;
     flex-flow: row wrap;

@@ -24,6 +24,7 @@
     width: 243px;
     height: 83px;
     flex: 0 0 auto;
+    display: flex;
     @media (max-width:767px) {
       width: 100px;
       height: 64px;
@@ -49,8 +50,9 @@
       padding: 0;
       white-space: nowrap;
       &:hover {
-        color: $color_green;
+        color: $color_white;
         text-decoration: none;
+        background: $color_blue;
       }
       &.btn-buy {
         text-transform: uppercase;

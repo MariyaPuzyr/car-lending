@@ -83,6 +83,8 @@
     color: $color_bord;
     @include adapt_to('large-phone') {
       line-height: 20px;
+      margin-top: 20px;
+      font-size: 16px;
     }
   }
   .full-car-info__price {
@@ -110,6 +112,9 @@
         padding: 0 20px;
         margin-right: 0;
       }
+      @media (min-width: 576px) and (max-width: 767px) {
+        order: 3;
+      }
     }
     .new-price {
       margin-left: 0;
@@ -119,6 +124,10 @@
         width: 100%;
         font-size: 40px;
         line-height: normal;
+      }
+      @media (min-width: 576px) and (max-width: 767px) {
+        order: 0;
+        width: auto;
       }
     }
   }
@@ -131,8 +140,20 @@
       }
     }
   }
+  @media (min-width: 576px) and (max-width: 767px) {
+    .car-color__image {
+      order: -1;
+    }
+    .car-title {
+      margin-bottom: 10px;
+    }
+    .car-btn {
+      order: 10;
+    }
+  }
 }
-@media (max-width: 767px) {
+
+@media (max-width: 575px) {
   body {
     overflow-x: hidden;
   }

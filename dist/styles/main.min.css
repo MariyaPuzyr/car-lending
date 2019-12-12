@@ -13636,6 +13636,8 @@ h3 {
 
   .modal-dialog .select-color {
     line-height: 20px;
+    margin-top: 20px;
+    font-size: 16px;
   }
 
   .modal-dialog .full-car-info__price .old-price {
@@ -13733,63 +13735,6 @@ h3 {
     -webkit-flex-flow: column wrap;
     -ms-flex-flow: column wrap;
     flex-flow: column wrap;
-  }
-
-  body {
-    overflow-x: hidden;
-  }
-
-  .modal-dialog .mobile-cover {
-    position: relative;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
-  .modal-dialog .mobile-cover .row {
-    width: auto;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-flow: column nowrap;
-    -ms-flex-flow: column nowrap;
-    flex-flow: column nowrap;
-    min-width: 200px;
-  }
-
-  .modal-dialog .mobile-cover .row.color-select {
-    min-width: inherit;
-  }
-
-  .modal-dialog .color-select .col-md-4 {
-    width: 110px;
-    padding: 0;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-flow: row wrap;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-  }
-
-  .modal-dialog .color-item label::after {
-    width: 30px;
-    height: 30px;
-  }
-
-  .modal-dialog .color-item input[type=radio] + label {
-    margin-right: 12px;
-    width: 40px;
-    height: 40px;
-  }
-
-  .modal-dialog .color-item:nth-child(2) {
-    margin-bottom: 15px;
-  }
-
-  .modal-dialog .car-title input[type=radio] + label {
-    min-width: 140px;
-    font-size: 17px;
-    line-height: 36px;
   }
 
   .banner {
@@ -13910,6 +13855,63 @@ h3 {
 
   .navbar .header-info a {
     font-size: 14px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .modal-dialog .mobile-cover {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .modal-dialog .mobile-cover .row {
+    width: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    min-width: 200px;
+  }
+
+  .modal-dialog .mobile-cover .row.color-select {
+    min-width: inherit;
+  }
+
+  .modal-dialog .color-select .col-md-4 {
+    width: 110px;
+    padding: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+  }
+
+  .modal-dialog .color-item label::after {
+    width: 30px;
+    height: 30px;
+  }
+
+  .modal-dialog .color-item input[type=radio] + label {
+    margin-right: 12px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .modal-dialog .color-item:nth-child(2) {
+    margin-bottom: 15px;
+  }
+
+  .modal-dialog .car-title input[type=radio] + label {
+    min-width: 140px;
+    font-size: 17px;
+    line-height: 36px;
   }
 
   .color-item label::after {
@@ -14135,6 +14137,39 @@ h3 {
     padding: 12px 15px;
     font-size: 18px;
     line-height: 24px;
+  }
+
+  .modal-dialog .full-car-info__price .discount {
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+
+  .modal-dialog .full-car-info__price .new-price {
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    width: auto;
+  }
+
+  .modal-dialog .car-color__image {
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+    -ms-flex-order: -1;
+    order: -1;
+  }
+
+  .modal-dialog .car-title {
+    margin-bottom: 10px;
+  }
+
+  .modal-dialog .car-btn {
+    -webkit-box-ordinal-group: 11;
+    -webkit-order: 10;
+    -ms-flex-order: 10;
+    order: 10;
   }
 
   .banner {

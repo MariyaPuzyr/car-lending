@@ -123,6 +123,8 @@
     }
     @include adapt_to('large-phone') {
       line-height: 20px;
+      margin-top: 20px;
+      font-size: 16px;
     }
   }
   .car {

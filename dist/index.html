@@ -24,7 +24,7 @@
             <li class="nav-item"><a class="nav-link" href="#advantages">Преимущества</a></li>
             <li class="nav-item"><a class="nav-link" href="#gallery">Фото/видео</a></li>
             <li class="nav-item"><a class="nav-link" href="#reviews">Отзывы</a></li>
-            <li class="nav-item"><a class="nav-link btn-buy" href="#" data-toggle="modal" data-target="#modal-form">Купить</a></li>
+            <li class="nav-item"><a class="nav-link btn-buy" href="#" data-toggle="modal" data-target="#modal-buy">Купить</a></li>
           </ul>
         </div>
       </div>
@@ -401,9 +401,61 @@
       <div class="modal-dialog large-modal" role="document">
         <div class="modal-content">
           <div class="modal-body">
-            <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button><img src="./img/img-ok.png">
-            <p>Спасибо. Ваш заказ принят.<br>В ближайшее время с вами свяжется наш менеджер.</p>
-            <div class="close-btn" data-dismiss="modal">Закрыть</div>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+            <form class="w-100" action="">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="car-img-info">
+                    <div class="car active racing-car" data-color="blue-color"><img class="car-img img-fluid" src="./img/img_prod_rc_blue_s.jpg"><img class="settings-ico ml-0 mr-auto" src="./img/rc-settings.png"></div>
+                    <div class="car racing-car" data-color="orange-color"><img class="car-img img-fluid" src="./img/img_prod_rc_orange_s.jpg"><img class="settings-ico ml-0 mr-auto" src="./img/rc-settings.png"></div>
+                    <div class="car climbing-car" data-color="green-color"><img class="car-img img-fluid" src="./img/img_prod_ck_green_s.jpg"><img class="settings-ico ml-0 mr-auto" src="./img/ck-settings.png"></div>
+                    <div class="car climbing-car" data-color="red-color"><img class="car-img img-fluid" src="./img/img_prod_ck_red_s.jpg"><img class="settings-ico ml-0 mr-auto" src="./img/ck-settings.png"></div>
+                  </div>
+                  <div class="select-color">Выберите цвет и модель вашей машинки</div>
+                  <div class="row d-flex">
+                    <div class="col-md-6 car-title racing-car">
+                      <input class="car-item" id="racing" type="radio" name="car" checked="checked">
+                      <label class="css-label" for="racing">Racing Car</label>
+                    </div>
+                    <div class="col-md-6 car-title climbing-car">
+                      <input class="car-item" id="climbing" type="radio" name="car">
+                      <label class="css-label" for="climbing">Climbing King</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 d-flex">
+                      <div class="color-item blue-color active" id="blue-color">
+                        <input class="css-radio" id="blue" type="radio" name="color" checked="checked">
+                        <label class="css-label" for="blue"></label>
+                      </div>
+                      <div class="color-item orange-color" id="orange-color">
+                        <input class="css-radio" id="orange" type="radio" name="color">
+                        <label class="css-label" for="orange"></label>
+                      </div>
+                      <div class="color-item green-color" id="green-color">
+                        <input class="css-radio" id="green" type="radio" name="color">
+                        <label class="css-label" for="green"></label>
+                      </div>
+                      <div class="color-item red-color" id="red-color">
+                        <input class="css-radio" id="red" type="radio" name="color">
+                        <label class="css-label" for="red"></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="full-car-info__price">
+                    <div class="old-price">1799 грн</div>
+                    <div class="discount">скидка 37%</div>
+                    <div class="new-price">1133 грн</div>
+                  </div>
+                  <input class="form-control" type="text" placeholder="Ваше имя *">
+                  <input class="form-control" type="text" placeholder="Телеефон *">
+                  <div class="g-recaptcha" data-sitekey="6LcO0ZgUAAAAACTyP2PjNWmwLN1imhtMBz58XmY4"></div>
+                  <button class="modal-btn mt-4" type="submit">Купить машинку</button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -430,7 +482,7 @@
           <div class="modal-body">
             <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button><img src="./img/img-ok.png">
             <p>Спасибо. Ваш заказ принят.<br>В ближайшее время с вами свяжется наш менеджер.</p>
-            <div class="close-btn" data-dismiss="modal">Закрыть</div>
+            <div class="modal-btn" data-dismiss="modal">Закрыть</div>
           </div>
         </div>
       </div>

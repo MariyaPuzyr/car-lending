@@ -3,8 +3,50 @@
     .modal-content
       .modal-body
         button.close(type='button', data-dismiss='modal', aria-label='Close')
-        img(src='./img/img-ok.png')
-        p Спасибо. Ваш заказ принят.
-          br
-          | В ближайшее время с вами свяжется наш менеджер.
-        .close-btn(data-dismiss='modal') Закрыть
+        form(action='').w-100
+          .row
+            .col-md-6
+              .car-img-info
+                .car.active.racing-car(data-color='blue-color')
+                  img(src='./img/img_prod_rc_blue_s.jpg').car-img.img-fluid
+                  img(src='./img/rc-settings.png').settings-ico.ml-0.mr-auto
+                .car.racing-car(data-color='orange-color')
+                  img(src='./img/img_prod_rc_orange_s.jpg').car-img.img-fluid
+                  img(src='./img/rc-settings.png').settings-ico.ml-0.mr-auto
+                .car.climbing-car(data-color='green-color')
+                  img(src='./img/img_prod_ck_green_s.jpg').car-img.img-fluid
+                  img(src='./img/ck-settings.png').settings-ico.ml-0.mr-auto
+                .car.climbing-car(data-color='red-color')
+                  img(src='./img/img_prod_ck_red_s.jpg').car-img.img-fluid
+                  img(src='./img/ck-settings.png').settings-ico.ml-0.mr-auto
+              .select-color Выберите цвет и модель вашей машинки
+              .row.d-flex
+                .col-md-6.car-title.racing-car
+                  input#racing.car-item(type='radio', name='car' checked='checked')
+                  label.css-label(for='racing') Racing Car
+                .col-md-6.car-title.climbing-car
+                  input#climbing.car-item(type='radio', name='car')
+                  label.css-label(for='climbing') Climbing King
+              .row
+                .col-md-4.d-flex
+                  .color-item.blue-color.active#blue-color
+                    input#blue.css-radio(type='radio', name='color' checked='checked')
+                    label.css-label(for='blue')
+                  .color-item.orange-color#orange-color
+                    input#orange.css-radio(type='radio', name='color')
+                    label.css-label(for='orange')
+                  .color-item.green-color#green-color
+                    input#green.css-radio(type='radio', name='color')
+                    label.css-label(for='green')
+                  .color-item.red-color#red-color
+                    input#red.css-radio(type='radio', name='color')
+                    label.css-label(for='red')
+            .col-md-6
+              .full-car-info__price
+                .old-price 1799 грн
+                .discount скидка 37%
+                .new-price 1133 грн
+              input(type='text' placeholder='Ваше имя *').form-control
+              input(type='text' placeholder='Телеефон *').form-control
+              .g-recaptcha(data-sitekey='6LcO0ZgUAAAAACTyP2PjNWmwLN1imhtMBz58XmY4')
+              button(type='submit').modal-btn.mt-4 Купить машинку

@@ -1,5 +1,8 @@
 .modal-dialog {
   max-width: 430px;
+  @include adapt_to('large-phone') {
+    margin: 0;
+  }
   &.large-modal {
     max-width: 800px;
   }
@@ -63,6 +66,7 @@
     .form-control {
       background: $color_grey;
       border: 1px solid $color_grey;
+      margin-bottom: 20px;
       &:focus {
         outline: none;
         box-shadow: none;
@@ -77,12 +81,19 @@
     line-height: 26px;
     font-family: $font_main;
     color: $color_bord;
+    @include adapt_to('large-phone') {
+      line-height: 20px;
+    }
   }
   .full-car-info__price {
     .old-price {
       font-size: 24px;
       @include adapt_to('large-phone') {
         margin-right: 18px;
+        font-size: 20px;
+        &::after {
+          width: 85px;
+        }
       }
       &::after {
         width: 100px;
@@ -95,12 +106,20 @@
       margin-right: 20px;
       @include adapt_to('large-phone') {
         margin-left: 0;
+        font-size: 20px;
+        padding: 0 20px;
+        margin-right: 0;
       }
     }
     .new-price {
       margin-left: 0;
       font-size: 46px;
       line-height: 61px;
+      @include adapt_to('large-phone') {
+        width: 100%;
+        font-size: 40px;
+        line-height: normal;
+      }
     }
   }
   .car-title {
@@ -139,12 +158,13 @@
         margin-right: 12px;
       }
       &:nth-child(2) {
-        margin-bottom: 20px;
+        margin-bottom: 15px;
       }
     }
     .car-title input[type=radio] + label {
       min-width: 140px;
       font-size: 17px;
+      line-height: 36px;
     }
   }
 }

@@ -35,16 +35,12 @@ $(document).ready(function () {
         $('.navbar').addClass('fixed-menu');
     });
   }
-
-  /* Scroll Function */
-  $(window).scroll(function () {
-    /* Fixed Navigation */
-    if ($('nav').offset().top > 0) {
-      $('.navbar').addClass('fixed-menu');
-    } else {
-      $('.navbar').removeClass('fixed-menu');
-    }
-  });
+  /* Fixed Navigation */
+  if ($('nav').offset().top > 0) {
+    $('.navbar').addClass('fixed-menu');
+  } else {
+    $('.navbar').removeClass('fixed-menu');
+  }
 
   $('[data-fancybox="images"]').fancybox({
     thumbs : {
@@ -71,5 +67,16 @@ $(document).ready(function () {
     $(this).addClass('active');
     var colorClass = $(this).attr('id');
     $(".car[data-color='"+colorClass+"']").addClass('active');
+    var blueCar = $('.blue-color');
+    var orangeCar = $('.orange-color');
+    if (blueCar.hasClass('active') || orangeCar.hasClass('active')){
+      $('.car-title.climbing-car').removeClass('active');
+      $('.car-title.racing-car').addClass('active');
+      console.log('blue and orange');
+    } else {
+      $('.car-title.climbing-car').addClass('active');
+      $('.car-title.racing-car').removeClass('active');
+      console.log('else');
+    }
   })
 });

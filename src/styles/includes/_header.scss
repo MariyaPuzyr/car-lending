@@ -62,8 +62,9 @@
         padding: 6px 30px;
         margin: 0;
         &:hover {
-          color: $color_green;
-          background: $color_white;
+          background: $color_blue;
+          color: $color_white;
+          border-color: $color_blue;
         }
       }
       @media (max-width:900px) {

@@ -7474,8 +7474,9 @@ a.text-dark:focus {
 }
 
 .navbar .navbar-nav .nav-link.btn-buy:hover {
-  color: #4ECD00;
-  background: #fff;
+  background: #3FA1E9;
+  color: #fff;
+  border-color: #3FA1E9;
 }
 
 .navbar .header-info {

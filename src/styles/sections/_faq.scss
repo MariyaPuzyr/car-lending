@@ -1,7 +1,6 @@
 .faq {
   position: relative;
-  background: url('../img/bg-texture.jpg') no-repeat top;
-  background-size: cover;
+  background: url('../img/bg-texture.jpg') top;
   padding-top: 40px;
   padding-bottom: 35px;
   &::before {

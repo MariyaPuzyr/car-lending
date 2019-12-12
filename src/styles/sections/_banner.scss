@@ -30,7 +30,7 @@
       font-size: 36px;
       text-align: center;
     }
-    @media (min-width: 768px) and (max-width: 980px) {
+    @media (min-width: 768px) and (max-width: 1024px) {
       max-width: 355px;
     }
   }
@@ -41,7 +41,7 @@
       font-size: 20px;
       text-align: center;
     }
-    @media (min-width: 768px) and (max-width: 980px) {
+    @media (min-width: 768px) and (max-width: 1024px) {
       max-width: 355px;
     }
   }
@@ -65,7 +65,7 @@
         top: 130px;
       }
     }
-    @media (min-width: 768px) and (max-width: 980px) {
+    @media (min-width: 768px) and (max-width: 1024px) {
       &::before {
         right: 30px;
         max-width: 706px;

@@ -126,13 +126,11 @@
     .navigation-list {
       flex-direction: row;
     }
-    .header-info {
-      margin-right: 20px;
-    }
     .navbar-nav {
       margin-top: 0;
+      margin-right: 30px;
       .nav-link.btn-buy {
-        padding: 12px 30px;
+        padding: 12px 15px;
         font-size: 18px;
         line-height: 24px;
       }
@@ -150,7 +148,6 @@
       width: auto;
     }
     .header-info {
-      margin-right: 30px;
       flex-direction: column;
       align-items: flex-end;
       a {
@@ -159,9 +156,8 @@
     }
     .navbar-nav {
       margin-top: 0;
-      margin-right: 0;
       .nav-link.btn-buy {
-        padding: 12px 30px;
+        padding: 12px 15px;
         font-size: 18px;
         line-height: 24px;
       }

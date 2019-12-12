@@ -100,10 +100,9 @@
       line-height: 24px;
       color: $color_txt2;
       font-family: $font_main;
-      margin-left: 10px;
+      margin-left: 20px;
     }
     @media (max-width:767px) {
-      justify-content: flex-end;
       margin-right: 30px;
       a {
         font-size: 12px;
@@ -112,6 +111,9 @@
         width: 100%;
         white-space: nowrap;
       }
+    }
+    @media (max-width: 900px) {
+      justify-content: flex-end;
     }
   }
   @media (max-width:767px) {

@@ -1,9 +1,11 @@
 #modal-form.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
   .modal-dialog(role='document')
     .modal-content
-      .modal-header
-        h5#exampleModalLabel.modal-title Modal title
-        button.close(type='button', data-dismiss='modal', aria-label='Close')
-          span(aria-hidden='true') ×
       .modal-body
-        | ...
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+        p.mt-0 Выбрана машинка “Racing Car”, цвет голубуой
+        form(action='').w-100
+          input(type='text' placeholder='Ваше имя *').form-control
+          input(type='text' placeholder='Телеефон *').form-control
+          .g-recaptcha(data-sitekey='6LcO0ZgUAAAAACTyP2PjNWmwLN1imhtMBz58XmY4')
+        button(type='submit').modal-btn.mt-4 Отправить

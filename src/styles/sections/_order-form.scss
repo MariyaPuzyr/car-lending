@@ -26,34 +26,4 @@
       margin-right: 15px;
     }
   }
-  .form-control {
-    margin-bottom: 25px;
-    border-radius: 0;
-    border: none;
-    padding: 12px 20px;
-    font-size: 20px;
-    line-height: 26px;
-    height: auto;
-    color: $color_txt2;
-  }
-  .btn-buy {
-    background: $color_green;
-    color: $color_white;
-    text-transform: uppercase;
-    padding: 8px 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    line-height: 32px;
-    font-family: $font_bold;
-    border: 1px solid $color_green;
-    margin-bottom: 25px;
-    width: 100%;
-    transition: .3s;
-    &:hover {
-      background: $color_white;
-      color: $color_green;
-    }
-  }
 }

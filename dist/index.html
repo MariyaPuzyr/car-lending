@@ -23,7 +23,7 @@
             <li class="nav-item"><a class="nav-link" href="#advantages">Преимущества</a></li>
             <li class="nav-item"><a class="nav-link" href="#gallery">Фото/видео</a></li>
             <li class="nav-item"><a class="nav-link" href="#reviews">Отзывы</a></li>
-            <li class="nav-item"><a class="nav-link btn-buy" href="#" data-toggle="modal" data-target="#modal-thanks">Купить</a></li>
+            <li class="nav-item"><a class="nav-link btn-buy" href="#" data-toggle="modal" data-target="#modal-form">Купить</a></li>
           </ul>
         </div>
       </div>
@@ -410,11 +410,16 @@
     <div class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <div class="modal-body">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+            <p class="mt-0">Выбрана машинка “Racing Car”, цвет голубуой</p>
+            <form class="w-100" action="">
+              <input class="form-control" type="text" placeholder="Ваше имя *">
+              <input class="form-control" type="text" placeholder="Телеефон *">
+              <div class="g-recaptcha" data-sitekey="6LcO0ZgUAAAAACTyP2PjNWmwLN1imhtMBz58XmY4"></div>
+            </form>
+            <button class="modal-btn mt-4" type="submit">Отправить</button>
           </div>
-          <div class="modal-body">...</div>
         </div>
       </div>
     </div>
@@ -431,5 +436,6 @@
     </div>
     <script src="./js/main-libs.min.js"></script>
     <script src="./js/main.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
   </body>
 </html>

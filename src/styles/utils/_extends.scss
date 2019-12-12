@@ -24,7 +24,8 @@
   width: 100%;
   transition: .3s;
   &:hover {
-    background: $color_white;
-    color: $color_green;
+    background: $color_blue;
+    color: $color_white;
+    border-color: $color_blue;
   }
 }

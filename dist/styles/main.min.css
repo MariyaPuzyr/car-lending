@@ -7374,8 +7374,9 @@ a.text-dark:focus {
 }
 
 .btn-buy:hover {
-  background: #fff;
-  color: #4ECD00;
+  background: #3FA1E9;
+  color: #fff;
+  border-color: #3FA1E9;
 }
 
 @font-face {
@@ -8484,6 +8485,10 @@ input[type=radio] {
 .faq .card-body {
   padding: 0 30px 30px;
   color: #8A8F92;
+}
+
+body {
+  font-family: "RobotoSlab-Regular", Roboto, sans-serif;
 }
 
 h3 {

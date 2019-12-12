@@ -80,6 +80,10 @@
         order: 3;
         width: 100%;
       }
+      @media (min-width: 576px) and (max-width: 767px) {
+        order: 0;
+        width: auto;
+      }
     }
     .discount {
       text-align: center;
@@ -241,7 +245,7 @@ input[type=radio] {
       position: absolute;
       border-radius: 50%;
       background: $color_blue;
-      @media (max-width: 767px) {
+      @media (max-width: 575px) {
         width: 30px;
         height: 30px;
       }
@@ -258,10 +262,13 @@ input[type=radio] {
     transition: .3s;
     border-radius: 50%;
     border: 2px solid $color_grey2;
-    @media (max-width: 767px) {
+    @media (max-width: 575px) {
       width: 40px;
       height: 40px;
       margin-right: 20px;
+    }
+    @media (min-width: 576px) and (max-width: 767px) {
+      margin-right: 25px;
     }
     &:hover {
       border-color: $color_bord;
@@ -315,7 +322,7 @@ input[type=radio] {
 //  }
 //}
 
-@media (max-width: 767px) {
+@media (max-width: 575px) {
   .car {
     &-btn {
       order: 10;
@@ -376,6 +383,20 @@ input[type=radio] {
     }
     .btn-buy {
       max-width: 280px;
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .full-car-info {
+    .car-color__image {
+      order: -1;
+    }
+    .car-title {
+      margin-bottom: 10px;
+    }
+    .car-btn {
+      order: 10;
     }
   }
 }

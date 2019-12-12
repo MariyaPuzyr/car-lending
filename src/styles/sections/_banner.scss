@@ -90,6 +90,7 @@
     }
   }
 }
+
 @media (min-width: 576px) and (max-width: 767px) {
   .banner {
     padding-top: 95px;
@@ -97,5 +98,15 @@
       height: 226px;
       top: 90px;
     }
+  }
+}
+
+@media (max-width: 767px) {
+  .car-img {
+    margin: auto;
+    max-height: 216px;
+  }
+  .settings-ico {
+    margin: auto;
   }
 }

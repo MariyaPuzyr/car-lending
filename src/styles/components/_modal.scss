@@ -15,7 +15,7 @@
     align-items: center;
     justify-content: center;
     @include adapt_to('large-phone') {
-      padding: 20px;
+      padding: 30px;
     }
     p {
       margin: 20px 0;
@@ -82,7 +82,7 @@
     .old-price {
       font-size: 24px;
       @include adapt_to('large-phone') {
-        margin-right: 20px;
+        margin-right: 18px;
       }
       &::after {
         width: 100px;
@@ -101,6 +101,15 @@
       margin-left: 0;
       font-size: 46px;
       line-height: 61px;
+    }
+  }
+  .car-title {
+    @media (min-width: 768px) and (max-width: 992px) {
+      max-width: initial;
+      margin-right: 0;
+      input[type=radio] + label {
+        min-width: 160px;
+      }
     }
   }
 }

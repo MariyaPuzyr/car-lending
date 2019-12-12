@@ -54,6 +54,12 @@
         position: absolute;
         left: 0;
       }
+      @media (min-width: 768px) and (max-width: 900px) {
+        font-size: 24px;
+        &::after {
+          width: 100px;
+        }
+      }
     }
     .new-price {
       font-size: 50px;
@@ -74,6 +80,10 @@
       justify-content: center;
       align-items: center;
       white-space: nowrap;
+      @media (min-width: 768px) and (max-width: 900px) {
+        font-size: 24px;
+        line-height: 32px;
+      }
     }
     @media (min-width: 768px) and (max-width: 1024px) {
       .new-price {
@@ -89,6 +99,9 @@
     margin-bottom: 10px;
     z-index: 1;
     position: relative;
+    @media (min-width: 768px) and (max-width: 900px) {
+      font-size: 16px;
+    }
   }
   .car-img {
     position: absolute;
@@ -143,10 +156,6 @@
       }
       .settings-ico {
         margin-left: auto;
-        @media (min-width: 768px) and (max-width: 1024px) {
-          margin-right: auto;
-          margin-left: 0;
-        }
       }
     }
   }

@@ -7659,7 +7659,7 @@ footer {
   width: 100%;
   height: 108px;
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   background: url("../img/svg/top-bg.svg") no-repeat top;
   -webkit-background-size: cover;
   background-size: cover;
@@ -13266,7 +13266,7 @@ h3 {
   }
 
   .modal-dialog .modal-body {
-    padding: 20px;
+    padding: 30px;
   }
 
   .modal-dialog .modal-body .modal-btn {
@@ -13275,7 +13275,7 @@ h3 {
   }
 
   .modal-dialog .full-car-info__price .old-price {
-    margin-right: 20px;
+    margin-right: 18px;
   }
 
   .modal-dialog .full-car-info__price .discount {
@@ -13474,10 +13474,6 @@ h3 {
     line-height: 24px;
   }
 
-  .banner h1 {
-    max-width: 355px;
-  }
-
   .banner h4 {
     max-width: 355px;
   }
@@ -13497,11 +13493,6 @@ h3 {
     -webkit-order: 2;
     -ms-flex-order: 2;
     order: 2;
-  }
-
-  .car-img-info .car .settings-ico {
-    margin-right: auto;
-    margin-left: 0;
   }
 }
 
@@ -13527,9 +13518,55 @@ h3 {
     font-size: 18px;
     line-height: 24px;
   }
+
+  .banner {
+    padding-top: 120px;
+    min-height: 490px;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+
+  .banner h1 {
+    font-size: 40px;
+  }
+
+  .banner h4 {
+    font-size: 20px;
+  }
+
+  .banner .container::before {
+    max-width: 516px;
+    top: 20px;
+  }
+
+  .full-car-info__price .old-price {
+    font-size: 24px;
+  }
+
+  .full-car-info__price .old-price::after {
+    width: 100px;
+  }
+
+  .full-car-info__price .discount {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .full-car-info .select-color {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
+  .modal-dialog .car-title {
+    max-width: initial;
+    margin-right: 0;
+  }
+
+  .modal-dialog .car-title input[type=radio] + label {
+    min-width: 160px;
+  }
+
   .full-car-info .car-img {
     max-width: 100%;
   }

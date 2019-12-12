@@ -7824,8 +7824,9 @@ footer {
 }
 
 .full-car-info .btn-buy:hover {
-  color: #4ECD00;
-  background: #fff;
+  background: #3FA1E9;
+  color: #fff;
+  border-color: #3FA1E9;
 }
 
 .car-img-info .car {

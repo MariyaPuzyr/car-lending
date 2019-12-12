@@ -108,8 +108,9 @@
     font-family: $font_bold;
     transition: .3s;
     &:hover {
-      color: $color_green;
-      background: $color_white;
+      background: $color_blue;
+      color: $color_white;
+      border-color: $color_blue;
     }
     @media (max-width: 767px) {
       margin-top: 10px;

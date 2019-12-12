@@ -7511,6 +7511,10 @@ footer {
   max-width: 430px;
 }
 
+.modal-dialog.large-modal {
+  max-width: 800px;
+}
+
 .modal-dialog .modal-content {
   -webkit-border-radius: 0;
   border-radius: 0;

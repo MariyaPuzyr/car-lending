@@ -26,3 +26,6 @@ h3 {
     max-width: 100%;
   }
 }
+.form-control::placeholder {
+  color: $color_txt2;
+}

@@ -48,8 +48,9 @@
       text-align: center;
       cursor: pointer;
       &:hover {
-        background: $color_white;
-        color: $color_green;
+        background: $color_blue;
+        color: $color_white;
+        border-color: $color_blue;
       }
       &:focus {
         outline: none;

@@ -7590,8 +7590,9 @@ footer {
 }
 
 .modal-dialog .modal-body .modal-btn:hover {
-  background: #fff;
-  color: #4ECD00;
+  background: #3FA1E9;
+  color: #fff;
+  border-color: #3FA1E9;
 }
 
 .modal-dialog .modal-body .modal-btn:focus {
@@ -7659,7 +7660,7 @@ footer {
   height: 98px;
   position: absolute;
   bottom: 0;
-  background: url("../img/svg/top-bg.svg") no-repeat;
+  background: url("../img/svg/top-bg.svg") no-repeat top;
   -webkit-background-size: cover;
   background-size: cover;
 }
@@ -7748,7 +7749,7 @@ footer {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-right: 25px;
+  margin-right: 20px;
 }
 
 .full-car-info__price .old-price::after {
@@ -7886,6 +7887,10 @@ footer {
   margin-bottom: 0;
 }
 
+.car-title input[type=radio] + label:hover {
+  border-color: #4D5559;
+}
+
 .car-title input[type=radio]:checked + label {
   border: 2px solid #4D5559;
 }
@@ -7929,20 +7934,40 @@ input[type=radio] {
   border: 2px solid #C8CED0;
 }
 
+.color-item input[type=radio] + label:hover {
+  border-color: #3FA1E9;
+}
+
 .color-item.active input[type=radio] + label {
   border: 2px solid #4D5559;
+}
+
+.color-item.active input[type=radio] + label:hover {
+  border-color: #3FA1E9;
 }
 
 .orange-color label::after {
   background: #FF6B00;
 }
 
+.orange-color input[type=radio] + label:hover {
+  border-color: #FF6B00;
+}
+
 .green-color label::after {
   background: #4ECD00;
 }
 
+.green-color input[type=radio] + label:hover {
+  border-color: #4ECD00;
+}
+
 .red-color label::after {
   background: #EE0707;
+}
+
+.red-color input[type=radio] + label:hover {
+  border-color: #EE0707;
 }
 
 .climbing-info {
@@ -8499,6 +8524,22 @@ h3 {
   font-family: "RobotoSlab-Bold";
   color: #34383A;
   margin: 0;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #8A8F92;
+}
+
+.form-control::-moz-placeholder {
+  color: #8A8F92;
+}
+
+.form-control::-ms-input-placeholder {
+  color: #8A8F92;
+}
+
+.form-control::placeholder {
+  color: #8A8F92;
 }
 
 @media (min-width: 576px) {

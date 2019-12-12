@@ -30,9 +30,45 @@
       &:nth-child(-n+8) {
         display: block;
       }
-      @include adapt_to('large-phone') {
-        width: 50%;
+      @media (max-width: 767px) {
+        width: 100%;
       }
+    }
+  }
+  .slick-slide {
+    margin-bottom: -5px;
+  }
+  .slick-prev,
+  .slick-next {
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    background: $color_white;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    &:hover::before {
+      background: $color_blue;
+    }
+    &::before {
+      content: '';
+      mask: url("../img/svg/arrow-select.svg") no-repeat center;
+      background: $color_bord;
+      width: 12px;
+      height: 14px;
+      transform: rotate(90deg);
+    }
+  }
+  .slick-prev {
+    left: 5px;
+  }
+  .slick-next {
+    right: 5px;
+    &::before {
+      transform: rotate(-90deg);
     }
   }
 }
@@ -51,7 +87,4 @@
 .fancybox-show-thumbs .fancybox-inner {
   right: 0;
   bottom: 95px;
-}
-@media all and (min-width: 800px) {
-
 }

@@ -78,5 +78,16 @@ $(document).ready(function () {
       $('.car-title.racing-car').removeClass('active');
       console.log('else');
     }
-  })
+  });
+
+  if ($(window).width() <= 767) {
+    $('.gallery-items').slick({
+      dots: false,
+      arrows: true,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    });
+  }
 });

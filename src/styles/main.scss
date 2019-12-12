@@ -18,3 +18,9 @@ h3 {
     font-size: 28px;
   }
 }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .container {
+    max-width: 100%;
+  }
+}

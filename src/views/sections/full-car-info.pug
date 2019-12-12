@@ -3,7 +3,7 @@ section.full-car-info
     .row
       .col-md-12
         .row
-          .col-md-7
+          .col-md-7.col-lg-7
             h5 Большие машинки на радио управлении.
               br
               | Ездят в любом направлении по самым сложным трассам.
@@ -20,8 +20,8 @@ section.full-car-info
             .col-md-2.car-title.climbing-car
               input#climbing.car-item(type='radio', name='car')
               label.css-label(for='climbing') Climbing King
-          .row
-            .col-md-4.d-flex
+          .row.form-positions
+            .col-md-6.col-lg-4.d-flex
               .color-item.blue-color.active#blue-color
                 input#blue.css-radio(type='radio', name='color' checked='checked')
                 label.css-label(for='blue')
@@ -34,9 +34,9 @@ section.full-car-info
               .color-item.red-color#red-color
                 input#red.css-radio(type='radio', name='color')
                 label.css-label(for='red')
-            .col-md-4
+            .col-md-6.col-lg-4
               button(type='submit' data-toggle="modal" data-target="#modal-form").btn-buy Купить машинку
-            .col-md-4
+            .col-md-6.col-lg-4
               .car-img-info
                 .car.active.racing-car(data-color='blue-color')
                   img(src='./img/img_prod_rc_blue_s.jpg').car-img

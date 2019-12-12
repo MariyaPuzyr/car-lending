@@ -1,5 +1,14 @@
 .navbar {
   padding: 15px 0;
+  @media (max-width:767px) {
+    padding: 10px 0;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  }
   &.fixed-menu {
     background: $color_white;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
@@ -15,9 +24,15 @@
     width: 243px;
     height: 83px;
     flex: 0 0 auto;
-    @include adapt_to('large-phone') {
+    @media (max-width:767px) {
       width: 100px;
       height: 64px;
+      margin-right: 5px;
+      margin-left: 10px;
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      width: 220px;
+      height: 72px;
     }
   }
   .navbar-nav {
@@ -32,6 +47,7 @@
       margin-left: 10px;
       margin-right: 30px;
       padding: 0;
+      white-space: nowrap;
       &:hover {
         color: $color_green;
         text-decoration: none;
@@ -48,9 +64,25 @@
           background: $color_white;
         }
       }
+      @media (max-width:900px) {
+        display: none;
+        &.btn-buy {
+          display: flex;
+          font-size: 14px;
+          line-height: 18px;
+          padding: 5px 15px;
+        }
+      }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        margin-left: 0;
+        margin-right: 20px;
+        font-size: 18px;
+        line-height: 24px;
+      }
     }
-    @include adapt_to('large-phone') {
-      display: none;
+    @media (max-width:767px) {
+      margin-top: 5px;
+      margin-right: 30px;
     }
   }
   .header-info {
@@ -67,11 +99,19 @@
       font-family: $font_main;
       margin-left: 10px;
     }
-  }
-  @include adapt_to('large-phone') {
-    flex-flow: column wrap;
-    .container {
-      flex-wrap: wrap;
+    @media (max-width:767px) {
+      justify-content: flex-end;
+      margin-right: 30px;
+      a {
+        font-size: 12px;
+        line-height: 16px;
+        margin: 0;
+        width: 100%;
+        white-space: nowrap;
+      }
     }
+  }
+  @media (max-width:767px) {
+    flex-flow: column wrap;
   }
 }

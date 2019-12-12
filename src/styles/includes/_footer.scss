@@ -6,3 +6,9 @@ footer {
   line-height: 21px;
   font-family: $font_main;
 }
+
+@include adapt_to('large-phone') {
+.development {
+  margin-top: 10px;
+}
+}

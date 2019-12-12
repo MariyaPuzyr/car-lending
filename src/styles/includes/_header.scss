@@ -168,6 +168,9 @@
 @media (max-width: 575px) {
   .navbar-brand {
     width: 76px;
+    img {
+      max-width: 100%;
+    }
   }
   .navbar .header-info a {
     font-size: 14px;

@@ -13896,6 +13896,10 @@ h3 {
     width: 76px;
   }
 
+  .navbar-brand img {
+    max-width: 100%;
+  }
+
   .navbar .header-info a {
     font-size: 14px;
   }

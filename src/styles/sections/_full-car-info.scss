@@ -111,7 +111,7 @@
 
 .car-title {
   margin-bottom: 10px;
-  width: 160px;
+  min-width: 160px;
   input[type=radio] + label {
     display: flex;
     align-items: center;
@@ -142,6 +142,10 @@ input[type=radio] {
       position: absolute;
       border-radius: 50%;
       background: $color_blue;
+      @include adapt_to('large-phone') {
+        width: 30px;
+        height: 30px;
+      }
     }
   }
   input[type=radio] + label {
@@ -155,6 +159,11 @@ input[type=radio] {
     transition: .3s;
     border-radius: 50%;
     border: 2px solid $color_grey2;
+    @include adapt_to('large-phone') {
+      width: 40px;
+      height: 40px;
+      margin-right: 20px;
+    }
   }
   &.active input[type=radio] + label {
     border: 2px solid $color_bord;

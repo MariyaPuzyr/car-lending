@@ -7561,6 +7561,7 @@ footer {
   width: 24px;
   height: 24px;
   background: #c8d0d9;
+  z-index: 1;
 }
 
 .modal-dialog .modal-body .modal-btn {
@@ -7622,6 +7623,7 @@ footer {
   font-size: 24px;
   line-height: 32px;
   padding: 2px 30px 6px;
+  margin-right: 20px;
 }
 
 .modal-dialog .full-car-info__price .new-price {
@@ -7844,7 +7846,7 @@ footer {
 
 .car-title {
   margin-bottom: 10px;
-  width: 160px;
+  min-width: 160px;
 }
 
 .car-title input[type=radio] + label {
@@ -13136,6 +13138,23 @@ h3 {
     flex-wrap: wrap;
   }
 
+  .modal-dialog .modal-body {
+    padding: 20px;
+  }
+
+  .modal-dialog .modal-body .modal-btn {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .modal-dialog .full-car-info__price .old-price {
+    margin-right: 20px;
+  }
+
+  .modal-dialog .full-car-info__price .discount {
+    margin-left: 0;
+  }
+
   .banner {
     min-height: 500px;
     -webkit-background-size: cover;
@@ -13149,6 +13168,17 @@ h3 {
   .banner .container::before {
     max-width: 320px;
     right: 30px;
+  }
+
+  .color-item label::after {
+    width: 30px;
+    height: 30px;
+  }
+
+  .color-item input[type=radio] + label {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
   }
 
   .gallery-items a {

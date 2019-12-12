@@ -50,9 +50,7 @@
       padding: 0;
       white-space: nowrap;
       &:hover {
-        color: $color_white;
-        text-decoration: none;
-        background: $color_blue;
+        text-decoration: underline;
       }
       &.btn-buy {
         text-transform: uppercase;
@@ -65,6 +63,7 @@
           background: $color_blue;
           color: $color_white;
           border-color: $color_blue;
+          text-decoration: none;
         }
       }
       @media (max-width: 900px) {

@@ -7743,9 +7743,7 @@ a.text-dark:focus {
 }
 
 .navbar .navbar-nav .nav-link:hover {
-  color: #fff;
-  text-decoration: none;
-  background: #3FA1E9;
+  text-decoration: underline;
 }
 
 .navbar .navbar-nav .nav-link.btn-buy {
@@ -7761,6 +7759,7 @@ a.text-dark:focus {
   background: #3FA1E9;
   color: #fff;
   border-color: #3FA1E9;
+  text-decoration: none;
 }
 
 .navbar .header-info {

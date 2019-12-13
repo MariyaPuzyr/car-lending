@@ -13535,6 +13535,12 @@ h3 {
   }
 }
 
+@media (min-width: 1280px) {
+  .full-car-info .car-img {
+    max-width: 445px;
+  }
+}
+
 @media (max-width: 1360px) {
   .banner::after {
     -webkit-background-size: cover;

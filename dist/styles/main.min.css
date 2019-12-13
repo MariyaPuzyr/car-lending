@@ -7936,6 +7936,8 @@ footer {
   padding-top: 150px;
   font-family: "RobotoSlab-Bold";
   color: #34383A;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 
 .banner::after {
@@ -7992,6 +7994,8 @@ footer {
   background: url("../img/grey_bg_top3_c.png") no-repeat top right;
   position: absolute;
   bottom: -65px;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 
 .full-car-info h5 {
@@ -8376,6 +8380,8 @@ input[type=radio] {
   -webkit-transform: rotate(-180deg);
   -ms-transform: rotate(-180deg);
   transform: rotate(-180deg);
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 
 .advantages-equipment__title {
@@ -8481,6 +8487,8 @@ input[type=radio] {
   height: 65px;
   background: url("../img/grey_bg_top3_c.png") no-repeat top right;
   position: absolute;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 
 .site-info::before {
@@ -8810,6 +8818,8 @@ input[type=radio] {
   background: url("../img/grey_bg_top3_c.png") no-repeat top right;
   position: absolute;
   top: 0;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 
 .faq h3 {
@@ -13738,8 +13748,6 @@ h3 {
 
   .banner {
     min-height: 450px;
-    -webkit-background-size: cover;
-    background-size: cover;
     padding-top: 125px;
     overflow: hidden;
   }
@@ -14049,8 +14057,6 @@ h3 {
   .banner {
     padding-top: 120px;
     min-height: 490px;
-    -webkit-background-size: cover;
-    background-size: cover;
   }
 
   .banner h1 {

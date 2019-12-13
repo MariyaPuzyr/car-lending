@@ -5,16 +5,15 @@
   padding-top: 150px;
   font-family: $font_bold;
   color: $color_txt;
+  background-size: cover;
   @media (max-width: 767px) {
     min-height: 450px;
-    background-size: cover;
     padding-top: 125px;
     overflow: hidden;
   }
   @media (min-width: 768px) and (max-width: 900px) {
     padding-top: 120px;
     min-height: 490px;
-    background-size: cover;
   }
   &::after {
     content: '';

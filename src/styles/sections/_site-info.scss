@@ -10,6 +10,7 @@
     height: 65px;
     background: url('../img/grey_bg_top3_c.png') no-repeat top right;
     position: absolute;
+    background-size: cover;
   }
   &::before {
     top: 0;

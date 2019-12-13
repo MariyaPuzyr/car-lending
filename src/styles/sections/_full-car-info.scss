@@ -376,6 +376,11 @@ input[type=radio] {
         flex: 0 0 100%;
         .car-img-info .car {
           right: 0;
+          top: -365px;
+          .settings-ico {
+            margin-left: 0;
+            margin-right: auto;
+          }
         }
       }
       &__check {
@@ -383,7 +388,14 @@ input[type=radio] {
       }
     }
     .btn-buy {
-      max-width: 280px;
+      max-width: 350px;
+      margin: 20px auto;
+    }
+    .car-btn {
+      order: 3;
+      margin: auto;
+      max-width: 100%;
+      flex: 0 0 100%;
     }
   }
 }

@@ -14281,6 +14281,12 @@ h3 {
 
   .full-car-info .car-color__image .car-img-info .car {
     right: 0;
+    top: -365px;
+  }
+
+  .full-car-info .car-color__image .car-img-info .car .settings-ico {
+    margin-left: 0;
+    margin-right: auto;
   }
 
   .full-car-info .car-color__check {
@@ -14288,7 +14294,21 @@ h3 {
   }
 
   .full-car-info .btn-buy {
-    max-width: 280px;
+    max-width: 350px;
+    margin: 20px auto;
+  }
+
+  .full-car-info .car-btn {
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+    -ms-flex-order: 3;
+    order: 3;
+    margin: auto;
+    max-width: 100%;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
   }
 }
 

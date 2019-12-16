@@ -25,21 +25,36 @@ $(document).ready(function () {
   });
 
 
-  $(window).bind('mousewheel DOMMouseScroll MozMousePixelScroll', function (event) {
-    if (!$(this).scrollTop()) {
-      $('.navbar').removeClass('fixed-menu');
-    }
-  });
-  $(window).scroll(function () {
-    if ($(this).scrollTop())
-      $('.navbar').addClass('fixed-menu');
-  });
+  // $(window).bind('mousewheel DOMMouseScroll MozMousePixelScroll', function (event) {
+  //   if (!$(this).scrollTop()) {
+  //     $('.navbar').removeClass('fixed-menu');
+  //   }
+  // });
+  // $(window).scroll(function () {
+  //   if ($(this).scrollTop())
+  //     $('.navbar').addClass('fixed-menu');
+  // });
   /* Fixed Navigation */
-  if ($('nav').offset().top > 1) {
+  if ($('nav').offset().top >= 1) {
     $('.navbar').addClass('fixed-menu');
   } else {
     $('.navbar').removeClass('fixed-menu');
   }
+
+  $(function(){
+    $(window).scroll(function() {
+      var scroll = getCurrentScroll();
+      if ( scroll >= 1 ) {
+        $('.navbar').addClass('fixed-menu');
+      }
+      else {
+        $('.navbar').removeClass('fixed-menu');
+      }
+    });
+    function getCurrentScroll() {
+      return window.pageYOffset || document.documentElement.scrollTop;
+    }
+  });
 
   $('[data-fancybox="images"]').fancybox({
     thumbs : {

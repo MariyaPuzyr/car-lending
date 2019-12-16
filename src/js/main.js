@@ -25,45 +25,6 @@ $(document).ready(function () {
   });
 
   /* Fixed Navigation */
-  // function scrollMenu() {
-  //   if ($('nav').offset().top >= 5) {
-  //     $('.navbar').addClass('fixed-menu');
-  //   } else {
-  //     $('.navbar').removeClass('fixed-menu');
-  //   }
-  // }
-  // scrollMenu();
-  // $(function () {
-  //   document.title = window.scrollY;
-  //   $(window).scroll(function () {
-  //     var scroll = getCurrentScroll();
-  //     scrollMenu();
-  //   });
-  //
-  //   function getCurrentScroll() {
-  //     return window.pageYOffset || document.documentElement.scrollTop;
-  //   }
-  // });
-
-  // var alternavbar = function(){
-  //   var scrollTop =  window.scrollY;
-  //   if( scrollTop > 5 ){
-  //     $('.navbar').addClass('fixed-menu');
-  //   }else{
-  //     $('.navbar').removeClass('fixed-menu');
-  //   }
-  // };
-  // alternavbar();
-  // window.addEventListener('scroll', alternavbar);
-
-  // var o = $(".scroll-btn");
-  // $(function () {
-  //   $(window).scroll(function () {
-  //     $(this).scrollTop() > 10 ? o.css("transform", "translateY(0)") : o.css("transform", "translateY(150%)")
-  //   }).triggerHandler("scroll"), o.click(function () {
-  //     return $("body,html").animate({scrollTop: 0}, 500), !1
-  //   })
-  // }),
   $(function () {
     function o() {
       return window.pageYOffset || document.documentElement.scrollTop

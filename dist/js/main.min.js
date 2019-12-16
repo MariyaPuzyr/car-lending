@@ -59,16 +59,16 @@ $(document).ready(function () {
   var o = $(".scroll-btn");
   $(function () {
     $(window).scroll(function () {
-      $(this).scrollTop() > 5 ? o.css("transform", "translateY(0)") : o.css("transform", "translateY(150%)")
+      $(this).scrollTop() > 300 ? o.css("transform", "translateY(0)") : o.css("transform", "translateY(150%)")
     }).triggerHandler("scroll"), o.click(function () {
-      return $("body,html").animate({scrollTop: 0}, 5), !1
+      return $("body,html").animate({scrollTop: 0}, 500), !1
     })
   }), $(function () {
     function o() {
       return window.pageYOffset || document.documentElement.scrollTop
     }
     $(window).scroll(function () {
-      o() >= 5 ? $(".navbar").addClass("fixed-menu") : $(".navbar").removeClass("fixed-menu")
+      o() >= 300 ? $(".navbar").addClass("fixed-menu") : $(".navbar").removeClass("fixed-menu")
     }).triggerHandler("scroll")
   });
 

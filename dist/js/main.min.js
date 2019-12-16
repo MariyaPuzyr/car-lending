@@ -56,14 +56,15 @@ $(document).ready(function () {
   // alternavbar();
   // window.addEventListener('scroll', alternavbar);
 
-  var o = $(".scroll-btn");
+  // var o = $(".scroll-btn");
+  // $(function () {
+  //   $(window).scroll(function () {
+  //     $(this).scrollTop() > 10 ? o.css("transform", "translateY(0)") : o.css("transform", "translateY(150%)")
+  //   }).triggerHandler("scroll"), o.click(function () {
+  //     return $("body,html").animate({scrollTop: 0}, 500), !1
+  //   })
+  // }),
   $(function () {
-    $(window).scroll(function () {
-      $(this).scrollTop() > 10 ? o.css("transform", "translateY(0)") : o.css("transform", "translateY(150%)")
-    }).triggerHandler("scroll"), o.click(function () {
-      return $("body,html").animate({scrollTop: 0}, 500), !1
-    })
-  }), $(function () {
     function o() {
       return window.pageYOffset || document.documentElement.scrollTop
     }

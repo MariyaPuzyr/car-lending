@@ -35,7 +35,7 @@ $(document).ready(function () {
       $('.navbar').addClass('fixed-menu');
   });
   /* Fixed Navigation */
-  if ($('nav').offset().top > 0) {
+  if ($('nav').offset().top > 1) {
     $('.navbar').addClass('fixed-menu');
   } else {
     $('.navbar').removeClass('fixed-menu');

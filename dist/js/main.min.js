@@ -41,21 +41,31 @@ $(document).ready(function () {
     $('.navbar').removeClass('fixed-menu');
   }
 
-  $(function(){
-    $(window).scroll(function() {
+  $(function () {
+    $(window).scroll(function () {
       var scroll = getCurrentScroll();
-      if ( scroll >= 1 ) {
+      if (scroll >= 1) {
         $('.navbar').addClass('fixed-menu');
       }
       else {
         $('.navbar').removeClass('fixed-menu');
       }
     });
+
     function getCurrentScroll() {
       return window.pageYOffset || document.documentElement.scrollTop;
     }
   });
-
+  $('window').on('touchmove', function (event) {
+    event.preventDefault();
+    var scroll = getCurrentScroll();
+    if (scroll >= 1) {
+      $('.navbar').addClass('fixed-menu');
+    }
+    else {
+      $('.navbar').removeClass('fixed-menu');
+    }
+  });
   $('[data-fancybox="images"]').fancybox({
     thumbs : {
       autoStart : true,

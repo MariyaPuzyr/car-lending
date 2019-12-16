@@ -59,7 +59,7 @@ $(document).ready(function () {
   var o = $(".scroll-btn");
   $(function () {
     $(window).scroll(function () {
-      $(this).scrollTop() > 300 ? o.css("transform", "translateY(0)") : o.css("transform", "translateY(150%)")
+      $(this).scrollTop() > 10 ? o.css("transform", "translateY(0)") : o.css("transform", "translateY(150%)")
     }).triggerHandler("scroll"), o.click(function () {
       return $("body,html").animate({scrollTop: 0}, 500), !1
     })
@@ -68,7 +68,7 @@ $(document).ready(function () {
       return window.pageYOffset || document.documentElement.scrollTop
     }
     $(window).scroll(function () {
-      o() >= 300 ? $(".navbar").addClass("fixed-menu") : $(".navbar").removeClass("fixed-menu")
+      o() >= 10 ? $(".navbar").addClass("fixed-menu") : $(".navbar").removeClass("fixed-menu")
     }).triggerHandler("scroll")
   });
 

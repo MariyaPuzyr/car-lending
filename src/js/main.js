@@ -35,22 +35,19 @@ $(document).ready(function () {
   //     $('.navbar').addClass('fixed-menu');
   // });
   /* Fixed Navigation */
-  if ($('nav').offset().top >= 5) {
-    $('.navbar').addClass('fixed-menu');
-  } else {
-    $('.navbar').removeClass('fixed-menu');
+  function scrollMenu() {
+    if ($('nav').offset().top >= 5) {
+      $('.navbar').addClass('fixed-menu');
+    } else {
+      $('.navbar').removeClass('fixed-menu');
+    }
   }
-
+  scrollMenu();
   $(function () {
     document.title = window.scrollY;
     $(window).scroll(function () {
       var scroll = getCurrentScroll();
-      if (scroll >= 5) {
-        $('.navbar').addClass('fixed-menu');
-      }
-      else {
-        $('.navbar').removeClass('fixed-menu');
-      }
+      scrollMenu();
     });
 
     function getCurrentScroll() {

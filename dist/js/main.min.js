@@ -35,7 +35,7 @@ $(document).ready(function () {
   //     $('.navbar').addClass('fixed-menu');
   // });
   /* Fixed Navigation */
-  if ($('nav').offset().top >= 50) {
+  if ($('nav').offset().top >= 20) {
     $('.navbar').addClass('fixed-menu');
   } else {
     $('.navbar').removeClass('fixed-menu');
@@ -45,7 +45,7 @@ $(document).ready(function () {
     document.title = window.scrollY;
     $(window).scroll(function () {
       var scroll = getCurrentScroll();
-      if (scroll >= 50) {
+      if (scroll >= 20) {
         $('.navbar').addClass('fixed-menu');
       }
       else {

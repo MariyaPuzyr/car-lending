@@ -46,9 +46,9 @@ $(document).ready(function () {
   // });
 
   var alternavbar = function(){
-    document.title = window.scrollY;
+    // document.title = window.scrollY;
     var scrollTop =  window.scrollY;
-    if( scrollTop > 50 ){
+    if( scrollTop > 5 ){
       $('.navbar').addClass('fixed-menu');
     }else{
       $('.navbar').removeClass('fixed-menu');
@@ -87,11 +87,9 @@ $(document).ready(function () {
     if (blueCar.hasClass('active') || orangeCar.hasClass('active')){
       $('.car-title.climbing-car').removeClass('active');
       $('.car-title.racing-car').addClass('active');
-      console.log('blue and orange');
     } else {
       $('.car-title.climbing-car').addClass('active');
       $('.car-title.racing-car').removeClass('active');
-      console.log('else');
     }
   });
 

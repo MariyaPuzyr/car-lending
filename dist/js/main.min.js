@@ -24,46 +24,39 @@ $(document).ready(function () {
     }, 1000);
   });
 
-
-  // $(window).bind('mousewheel DOMMouseScroll MozMousePixelScroll', function (event) {
-  //   if (!$(this).scrollTop()) {
+  /* Fixed Navigation */
+  // function scrollMenu() {
+  //   if ($('nav').offset().top >= 5) {
+  //     $('.navbar').addClass('fixed-menu');
+  //   } else {
   //     $('.navbar').removeClass('fixed-menu');
   //   }
+  // }
+  // scrollMenu();
+  // $(function () {
+  //   document.title = window.scrollY;
+  //   $(window).scroll(function () {
+  //     var scroll = getCurrentScroll();
+  //     scrollMenu();
+  //   });
+  //
+  //   function getCurrentScroll() {
+  //     return window.pageYOffset || document.documentElement.scrollTop;
+  //   }
   // });
-  // $(window).scroll(function () {
-  //   if ($(this).scrollTop())
-  //     $('.navbar').addClass('fixed-menu');
-  // });
-  /* Fixed Navigation */
-  function scrollMenu() {
-    if ($('nav').offset().top >= 5) {
+
+  var alternavbar = function(){
+    document.title = window.scrollY;
+    var scrollTop =  window.scrollY;
+    if( scrollTop > 50 ){
       $('.navbar').addClass('fixed-menu');
-    } else {
+    }else{
       $('.navbar').removeClass('fixed-menu');
     }
-  }
-  scrollMenu();
-  $(function () {
-    document.title = window.scrollY;
-    $(window).scroll(function () {
-      var scroll = getCurrentScroll();
-      scrollMenu();
-    });
+  };
+  alternavbar();
+  window.addEventListener('scroll', alternavbar);
 
-    function getCurrentScroll() {
-      return window.pageYOffset || document.documentElement.scrollTop;
-    }
-  });
-  // $('window').on('touchmove', function (event) {
-  //   event.preventDefault();
-  //   var scroll = getCurrentScroll();
-  //   if (scroll >= 100) {
-  //     $('.navbar').addClass('fixed-menu');
-  //   }
-  //   else {
-  //     $('.navbar').removeClass('fixed-menu');
-  //   }
-  // });
   $('[data-fancybox="images"]').fancybox({
     thumbs : {
       autoStart : true,

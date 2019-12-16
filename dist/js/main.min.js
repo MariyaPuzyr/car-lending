@@ -59,7 +59,7 @@ $(document).ready(function () {
   $('window').on('touchmove', function (event) {
     event.preventDefault();
     var scroll = getCurrentScroll();
-    if (scroll >= 1) {
+    if (scroll >= 10) {
       $('.navbar').addClass('fixed-menu');
     }
     else {

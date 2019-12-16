@@ -35,17 +35,17 @@ $(document).ready(function () {
   //     $('.navbar').addClass('fixed-menu');
   // });
   /* Fixed Navigation */
-  // if ($('nav').offset().top >= 1) {
-  //   $('.navbar').addClass('fixed-menu');
-  // } else {
-  //   $('.navbar').removeClass('fixed-menu');
-  // }
+  if ($('nav').offset().top >= 50) {
+    $('.navbar').addClass('fixed-menu');
+  } else {
+    $('.navbar').removeClass('fixed-menu');
+  }
 
   $(function () {
     document.title = window.scrollY;
     $(window).scroll(function () {
       var scroll = getCurrentScroll();
-      if (scroll >= 100) {
+      if (scroll >= 50) {
         $('.navbar').addClass('fixed-menu');
       }
       else {

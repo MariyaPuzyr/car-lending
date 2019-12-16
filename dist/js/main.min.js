@@ -45,17 +45,25 @@ $(document).ready(function () {
   //   }
   // });
 
-  var alternavbar = function(){
-    // document.title = window.scrollY;
-    var scrollTop =  window.scrollY;
-    if( scrollTop > 5 ){
-      $('.navbar').addClass('fixed-menu');
-    }else{
-      $('.navbar').removeClass('fixed-menu');
+  // var alternavbar = function(){
+  //   var scrollTop =  window.scrollY;
+  //   if( scrollTop > 5 ){
+  //     $('.navbar').addClass('fixed-menu');
+  //   }else{
+  //     $('.navbar').removeClass('fixed-menu');
+  //   }
+  // };
+  // alternavbar();
+  // window.addEventListener('scroll', alternavbar);
+
+  $(function () {
+    function o() {
+      return window.pageYOffset || document.documentElement.scrollTop
     }
-  };
-  alternavbar();
-  window.addEventListener('scroll', alternavbar);
+    $(window).scroll(function () {
+      o() >= 5 ? $(".navbar").addClass("fixed-menu") : $(".navbar").removeClass("fixed-menu")
+    }).triggerHandler("scroll")
+  });
 
   $('[data-fancybox="images"]').fancybox({
     thumbs : {

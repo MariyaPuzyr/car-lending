@@ -7655,6 +7655,7 @@ a.text-dark:focus {
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
+  cursor: pointer;
 }
 
 .btn-buy:hover {

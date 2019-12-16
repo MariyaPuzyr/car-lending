@@ -24,17 +24,16 @@ $(document).ready(function () {
     }, 1000);
   });
 
-  if ($(window).width() >= 1200) {
-    $(window).bind('mousewheel DOMMouseScroll MozMousePixelScroll', function (event) {
-      if (!$(this).scrollTop()) {
-        $('.navbar').removeClass('fixed-menu');
-      }
-    });
-    $(window).scroll(function () {
-      if ($(this).scrollTop())
-        $('.navbar').addClass('fixed-menu');
-    });
-  }
+
+  $(window).bind('mousewheel DOMMouseScroll MozMousePixelScroll', function (event) {
+    if (!$(this).scrollTop()) {
+      $('.navbar').removeClass('fixed-menu');
+    }
+  });
+  $(window).scroll(function () {
+    if ($(this).scrollTop())
+      $('.navbar').addClass('fixed-menu');
+  });
   /* Fixed Navigation */
   if ($('nav').offset().top > 0) {
     $('.navbar').addClass('fixed-menu');

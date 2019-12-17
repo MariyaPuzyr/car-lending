@@ -8367,6 +8367,11 @@ input[type=radio] {
   margin-bottom: 0;
 }
 
+.climbing-info .col-md-4 {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
 .advantages-equipment {
   position: relative;
   padding-top: 40px;
@@ -8728,6 +8733,10 @@ input[type=radio] {
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+}
+
+.order-form__info a {
+  color: #fff;
 }
 
 .order-form__info-item:nth-child(1) {
